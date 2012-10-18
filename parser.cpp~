@@ -28,7 +28,7 @@ public:
 		while(!inputLine.empty())
 		{
 			  word = inputLine.front() ;
-			  out << word << " " ;
+			  out << word ;
 			  inputLine.pop() ;
 		}
 	}
