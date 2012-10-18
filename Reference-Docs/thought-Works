@@ -1,0 +1,5 @@
+- Hash Tables: at runtime
+	a,b,....z * a,b....z -> Item_to_be_replaced->Replacement ;
+
+- Queue of parsed words from input file separated by " " or "\n" or "\r"
+
