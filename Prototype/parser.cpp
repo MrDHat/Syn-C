@@ -81,11 +81,22 @@ int main(int argc, char **argv)
 	string sline ;						//Line read from file
 	char *line, *word ;
 	
+	string input_file(argv[1]) ;
+	string output_file(argv[1]) ;
+	string log_file(argv[1]) ; ;
+	
+	input_file.append(argv[2]) ;
+	
+	output_file.append("out_") ;
+	output_file.append(argv[2]) ;
+	
+	log_file.append("log.txt") ;
+	
 	queue<char *> inputLine ;				//Queue in which the words are stored
 	
-	in.open("inout.cpp",ios::in) ;
-	out.open("output.cpp",ios::out) ;				//File Name to be REVISED!
-	logout.open("log.txt",ios::out);
+	in.open(input_file.c_str() ,ios::in) ;
+	out.open(output_file.c_str(), ios::out) ;				//File Name to be REVISED!
+	logout.open(log_file.c_str() ,ios::out);
 	
 	parser obj ;						//Class Object
 	

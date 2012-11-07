@@ -1,0 +1,12 @@
+1: Replace #include<iostream.h> with #include<iostream>
+2: Replace #include<conio.h> with #include<stdlib.h>
+
+Include replacements.h which includes definition for getch()
+5: Replace void main() with int main()
+9: Replace clrscr() with system("cls")
+10: Replace cout with std::cout
+11: Replace cin with std::cin
+12: Replace cout with std::cout
+13: Replace cin with std::cin
+20: Replace cout with std::cout
+22: Replace cout with std::cout

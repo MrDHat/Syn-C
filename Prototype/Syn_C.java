@@ -1,10 +1,11 @@
 import javax.swing.* ;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.* ;
 
 public class Syn_C implements ActionListener{
 	
-	String dir, file ;
+	String dir = " ", file ;
 	static Syn_C obj ;
 	JFrame f;
 	JLabel br, co ;
@@ -45,7 +46,16 @@ public class Syn_C implements ActionListener{
 		}
 		
 		else{
-		
+			if(dir != " "){
+				String[] param = new String[3] ;
+				param[0] = "a.exe " ;
+				param[1] = dir ;
+				param[2] = file ;
+				try{
+				Process p = Runtime.getRuntime().exec(param) ;
+				}
+				catch (IOException e) {System.out.println(" procccess not read"+e);}
+			}
 		}
 	}
 }
