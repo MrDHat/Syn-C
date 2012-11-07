@@ -87,7 +87,7 @@ int main(int argc, char **argv)
 	
 	input_file.append(argv[2]) ;
 	
-	output_file.append("out_") ;
+	output_file.append("conv_") ;
 	output_file.append(argv[2]) ;
 	
 	log_file.append("log.txt") ;
@@ -117,6 +117,7 @@ int main(int argc, char **argv)
 	
 	in.close() ;
 	out.close() ;
+	logout.close() ;
 	return 0;
 	
 }

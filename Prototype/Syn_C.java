@@ -19,6 +19,7 @@ public class Syn_C implements ActionListener{
 		br_b.addActionListener(this) ;
 		co_b.addActionListener(this) ;
 		f.setSize(400,150);
+		f.setResizable(false) ;
 		Container content = f.getContentPane();
 		
 		content.setLayout(new GridLayout(1,3));
@@ -31,7 +32,7 @@ public class Syn_C implements ActionListener{
 
 	public static void main(String args[]){
 		
-				
+			
 			obj = new Syn_C() ;
 
 		
@@ -47,10 +48,8 @@ public class Syn_C implements ActionListener{
 		
 		else{
 			if(dir != " "){
-				String[] param = new String[3] ;
-				param[0] = "a.exe " ;
-				param[1] = dir ;
-				param[2] = file ;
+				String param  ;
+				param = "a.exe " + dir + " " + file ;
 				try{
 				Process p = Runtime.getRuntime().exec(param) ;
 				}
