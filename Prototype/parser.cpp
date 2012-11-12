@@ -45,7 +45,7 @@ public:
 				logout<<"Include replacements.h which includes definition for getch()\n";
 			}
 			else if(!strcmp(word, "clrscr()")){
-				strcpy(replace, "system(\"cls\")") ;
+				strcpy(replace, "system(\"clear\")") ;
 				out << replace << " " ;
 				logout << line << ": Replace " << word << " with " << replace << "\n" ;
 			}

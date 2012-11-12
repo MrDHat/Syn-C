@@ -49,7 +49,7 @@ public class Syn_C implements ActionListener{
 		else{
 			if(dir != " "){
 				String param  ;
-				param = "a.exe " + dir + " " + file ;
+				param = "./a.out " + dir + " " + file ;
 				try{
 				Process p = Runtime.getRuntime().exec(param) ;
 				}
