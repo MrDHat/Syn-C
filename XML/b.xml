@@ -1,0 +1,37 @@
+<b>
+	<bcd.h replacement="">
+		<abs replacement=""/>
+		<acos replacement=""/>
+		<asin replacement=""/>
+		<atan replacement=""/>
+		<cos replacement=""/>
+		<cosh replacement=""/>
+		<exp replacement=""/>
+		<log replacement=""/>
+		<log10 replacement=""/>
+		<pow replacement=""/>
+		<pow10 replacement=""/>
+		<real replacement=""/>
+		<sin replacement=""/>
+		<sinh replacement=""/>
+		<sqrt replacement=""/>
+		<tan replacement=""/>
+		<tanh replacement=""/>
+	</bcd.h>
+	<bios.h replacement="">
+		<_bios_disk replacement=""/>
+		<_bios_equip replacement=""/>
+		<_bios_keybrd replacement=""/>
+		<_bios_memsize replacement=""/>
+		<_bios_printer replacement=""/>
+		<_bios_serialcom replacement=""/>
+		<_bios_timeofday replacement=""/>
+		<bioscom replacement=""/>
+		<biosdisk replacement=""/>
+		<biosequip replacement=""/>
+		<bioskey replacement=""/>
+		<biosmemory replacement=""/>
+		<biosprint replacement=""/>
+		<biostime replacement=""/>
+	</bios.h>
+</b>

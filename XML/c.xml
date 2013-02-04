@@ -1,0 +1,42 @@
+<c>
+	<conio.h replacement="">
+		<cgets replacement=""/>
+		<clreol replacement=""/>
+		<clrscr replacement=""/>
+		<cprintf replacement=""/>
+		<cputs replacement=""/>
+		<cscanf replacement=""/>
+		<delline replacement=""/>
+		<getch replacement=""/>
+		<getche replacement=""/>
+		<getpass replacement=""/>
+		<gettext replacement=""/>
+		<gettextinfo replacement=""/>
+		<gotoxy replacement=""/>
+		<highvideo replacement=""/>
+		<insline replacement=""/>
+		<inp replacement=""/>
+		<inport replacement=""/>
+		<inportb replacement=""/>
+		<inpw replacement=""/>
+		<kbhit replacement=""/>
+		<lowvideo replacement=""/>
+		<movetext replacement=""/>
+		<normvideo replacement=""/>
+		<outp replacement=""/>
+		<outport replacement=""/>
+		<outportb replacement=""/>
+		<outw replacement=""/>
+		<putch replacement=""/>
+		<puttext replacement=""/>
+		<_setcursortype replacement=""/>
+		<textattr replacement=""/>
+		<textbackground replacement=""/>
+		<textcolor replacement=""/>
+		<textmode replacement=""/>
+		<ungetch replacement=""/>
+		<wherex replacement=""/>
+		<wherey replacement=""/>
+		<window replacement=""/>
+	</conio.h>
+</c>

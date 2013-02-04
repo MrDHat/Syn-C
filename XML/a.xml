@@ -1,0 +1,30 @@
+<a>
+	<alloc.h replacement="">
+		<arc replacement=""/>
+		<brk replacement=""/>
+		<calloc replacement=""/>
+		<coreleft replacement=""/>
+		<farcalloc replacement=""/>
+		<farcoreleft replacement=""/>
+		<farfree replacement=""/>
+		<farheapcheck replacement=""/>
+		<farheapcheckfree replacement=""/>
+		<farheapchecknode replacement=""/>
+		<farheapfillfree replacement=""/>
+		<farheapwalk replacement=""/>
+		<farmalloc replacement=""/>
+		<farrealloc replacement=""/>
+		<free replacement=""/>
+		<heapcheck replacement=""/>
+		<heapcheckfree replacement=""/>
+		<heapchecknode replacement=""/>
+		<heapfillfree replacement=""/>
+		<heapwalk replacement=""/>
+		<malloc replacement=""/>
+		<realloc replacement=""/>
+		<sbrk replacement=""/>
+		<NULL replacement=""/>
+		<ptrdiff_t replacement=""/>
+		<size_t replacement=""/>
+	</alloc.h>
+<a>

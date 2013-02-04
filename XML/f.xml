@@ -1,0 +1,21 @@
+<f>
+	<float.h replacement="">
+		<_clear87 replacement="">
+		<_fpreset replacement="">
+		<_control87 replacement="">
+		<_status87 replacement="">
+		<CW_DEFAULT replacement="" constant="true">
+		<FPE_EXPLICITGEN replacement="" constant="true">
+		<FPE_INEXACT replacement="" constant="true">
+		<FPE_INTDIV0 replacement="" constant="true">
+		<FPE_INTOVERFLOW replacement="" constant="true">
+		<FPE_INVALID replacement="" constant="true">
+		<FPE_OVERLOW replacement="" constant="true">
+		<FPE_UNDERFLOW replacement="" constant="true">
+		<FPE_ZERODIVIDE replacement="" constant="true">
+		<ILL_EXECUTION replacement="" constant="true">
+		<ILL_EXPLICITGEN replacement="" constant="true">
+		<SEGV_BOUND replacement="" constant="true">
+		<SEGV_EXPLICITGEN replacement="" constant="true">
+	</float.h>
+</f>
