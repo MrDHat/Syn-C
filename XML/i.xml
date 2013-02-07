@@ -1,0 +1,40 @@
+<i>
+	<io.h replacement="">
+	    <access replacement=""/>
+	    <chmod replacement=""/>
+	    <_chmod replacement=""/>
+	    <chsize replacement=""/>
+	    <close replacement=""/>
+	    <_close replacement=""/>
+	    <creat replacement=""/>
+	   	<_creat replacement=""/>
+	    <creatnew replacement=""/>
+	    <creattemp replacement=""/>
+	    <dup replacement=""/>
+	    <dup2 replacement=""/>
+	    <eof replacement=""/>
+	    <filelength replacement=""/>
+	    <getftime replacement=""/>
+	    <ioctl replacement=""/>
+	    <isatty replacement=""/>
+	    <lock replacement=""/>
+	    <locking replacement=""/>
+	    <lseek replacement=""/>
+	    <mktemp replacement=""/>
+	    <open replacement=""/>
+	    <_open replacement=""/>
+	   	<read replacement=""/>
+	    <_read replacement=""/>
+	    <remove replacement=""/>
+	    <rename replacement=""/>
+	    <setftime replacement=""/>
+	    <setmode replacement=""/>
+	    <sopen replacement=""/>
+	    <tell replacement=""/>
+	   	<umask replacement=""/>
+	    <unlink replacement=""/>
+	    <unlock replacement=""/>
+	    <write replacement=""/>
+	    <_write replacement=""/>
+	</io.h>
+</i>

@@ -1,0 +1,31 @@
+<p>
+	<process.h replacement=""/>
+	    <abort replacement=""/>
+	    <_cexit replacement=""/>
+	    <_c_exit replacement=""/>
+	    <execl replacement=""/>
+	    <execle replacement=""/>
+	    <execlp replacement=""/>
+	    <execlpe replacement=""/>
+	    <execv replacement=""/>
+	    <execve replacement=""/>
+	    <execvp replacement=""/>
+	    <execvpe replacement=""/>
+	    <exit replacement=""/>
+	    <_exit replacement=""/>
+	    <getpid replacement=""/>
+	    <spawnl replacement=""/>
+	    <spawnle replacement=""/>
+	    <spawnlp replacement=""/>
+	    <spawnlpe replacement=""/>
+	    <spawnv replacement=""/>
+	    <spawnve replacement=""/>
+	    <spawnvp replacement=""/>
+	    <spawnvpe replacement=""/>
+	    <system replacement=""/>	    
+	    <P_NOWAIT replacement="" constant="true"/>
+	    <P_OVERLAY replacement="" constant="true"/>
+	    <P_WAIT replacement="" constant="true"/>
+	    <_psp replacement="" constant="true"/>
+	</process.h>
+</p>
