@@ -1,5 +1,26 @@
+/*
 - Hash Tables: at runtime
 	a,b,....z * a,b....z -> Item_to_be_replaced->Replacement ;
-
+ 
 - Queue of parsed words from input file separated by " " or "\n" or "\r"
+*/
+
+No replacement for header files in the XML file
+
+
+
+
+Hash Map to be formed
+All functions are keys and the header files which contain them are values.
+Parse the I/P Program and form a queue containing all the words in the prog.
+Next, Access first letter of header files and Access the DOM directly.
+
+An array of includes:
+All header files in original prog are pushed into the array.If any element of the array matches a entry in any XML file, then that entry is removed else retained.
+
+Output file to be prepared at the last
+
+ToDo:
+1. Edit XML files: remove the replacement attribute from header file's tag and add an attrib called "header" for every function's tag.
+2. Read about Multi Map in C++.
 
