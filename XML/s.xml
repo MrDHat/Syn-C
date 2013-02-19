@@ -1,0 +1,17 @@
+<s>
+	<stdarg.h replacement="">
+		<va_arg replacement=""/>
+		<va_start replacement=""/>
+		<va_end replacement=""/>
+	</stdarg.h> 
+	<search.h replacement="">
+	</search.h>
+	<stream.h replacement="">
+	</stream.h>
+	<stddef.h replacement="">
+		<offsetof replacement=""/>
+		<NULL replacement="" constant="true">
+	</stddef.h>
+	<stdiostr.h replacement="">
+	</stdiostr.h>
+	</s>
