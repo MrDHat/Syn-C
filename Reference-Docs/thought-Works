@@ -21,6 +21,11 @@ All header files in original prog are pushed into the array.If any element of th
 Output file to be prepared at the last
 
 ToDo:
-1. Edit XML files: remove the replacement attribute from header file's tag and add an attrib called "header" for every function's tag.
-2. Read about Multi Map in C++.
+1. Edit XML files: remove the replacement attribute from header file's tag and add an attrib called "header" for every function's tag. Header attribute contains the header file of the replacement.
+2. Read about Hash Map in C++.
 
+
+Possible Complications:
+1. Difference between prototype of functions
+2. Taking into account the amount of "spaces" in the code.
+3. Defferentiating words from the program.
