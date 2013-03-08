@@ -7,7 +7,7 @@ Parses the XML file, generates the unordered map
 
 #include <unordered_map>
 #include <string>
-#include "PugiXML/pugixml.cpp"
+#include "PugiXML/pugixml.hpp"
 
 using namespace std;
 using namespace pugi;
@@ -22,7 +22,7 @@ class parser {
 		//Pugi XML variables
 		xml_document xml_header_file;
 		xml_parse_result xml_result;
-		xml_node xml_tool;
+		xml_node xml_tool, child_tool;
 		xml_node_iterator xml_iterator;
 		xml_attribute xml_attrib;
 		xml_attribute_iterator xml_a_iterator;

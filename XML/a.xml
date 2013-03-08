@@ -1,30 +1,30 @@
 <a>
-	<alloc.h replacement="">
-		<arc replacement=""/>
-		<brk replacement=""/>
-		<calloc replacement=""/>
-		<coreleft replacement=""/>
-		<farcalloc replacement=""/>
-		<farcoreleft replacement=""/>
-		<farfree replacement=""/>
-		<farheapcheck replacement=""/>
-		<farheapcheckfree replacement=""/>
-		<farheapchecknode replacement=""/>
-		<farheapfillfree replacement=""/>
-		<farheapwalk replacement=""/>
-		<farmalloc replacement=""/>
-		<farrealloc replacement=""/>
-		<free replacement=""/>
-		<heapcheck replacement=""/>
-		<heapcheckfree replacement=""/>
-		<heapchecknode replacement=""/>
-		<heapfillfree replacement=""/>
-		<heapwalk replacement=""/>
-		<malloc replacement=""/>
-		<realloc replacement=""/>
-		<sbrk replacement=""/>
-		<NULL replacement=""/>
-		<ptrdiff_t replacement=""/>
-		<size_t replacement=""/>
-	</alloc.h>
+	<functions>
+		<function name="arc" replacement="" header=""/>
+		<function name="brk" replacement="" heaader=""/>
+		<function name="calloc" replacement="" heaader=""/>
+		<function name="coreleft" replacement="" heaader=""/>
+		<function name="farcalloc" replacement="" heaader=""/>
+		<function name="farcoreleft" replacement="" heaader=""/>
+		<function name="farfree" replacement="" heaader=""/>
+		<function name="farheapcheck" replacement="" heaader=""/>
+		<function name="farheapcheckfree" replacement="" heaader=""/>
+		<function name="farheapchecknode" replacement="" heaader=""/>
+		<function name="farheapfillfree" replacement="" heaader=""/>
+		<function name="farheapwalk" replacement="" heaader=""/>
+		<function name="farmalloc" replacement="" heaader=""/>
+		<function name="farrealloc" replacement="" heaader=""/>
+		<function name="free" replacement="" heaader=""/>
+		<function name="heapcheck" replacement="" heaader=""/>
+		<function name="heapcheckfree" replacement="" heaader=""/>
+		<function name="heapchecknode" replacement="" heaader=""/>
+		<function name="heapfillfree" replacement="" heaader=""/>
+		<function name="heapwalk" replacement="" heaader=""/>
+		<function name="malloc" replacement="" heaader=""/>
+		<function name="realloc" replacement="" heaader=""/>
+		<function name="sbrk" replacement="" heaader=""/>
+		<function name="NULL" replacement="" heaader=""/>
+		<function name="ptrdiff_t" replacement="" heaader=""/>
+		<function name="size_t" replacement="" heaader=""/>
+	</functions>
 </a>
