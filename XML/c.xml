@@ -1,42 +1,44 @@
 <c>
-	<conio.h replacement="">
-		<cgets replacement=""/>
-		<clreol replacement=""/>
-		<clrscr replacement=""/>
-		<cprintf replacement=""/>
-		<cputs replacement=""/>
-		<cscanf replacement=""/>
-		<delline replacement=""/>
-		<getch replacement=""/>
-		<getche replacement=""/>
-		<getpass replacement=""/>
-		<gettext replacement=""/>
-		<gettextinfo replacement=""/>
-		<gotoxy replacement=""/>
-		<highvideo replacement=""/>
-		<insline replacement=""/>
-		<inp replacement=""/>
-		<inport replacement=""/>
-		<inportb replacement=""/>
-		<inpw replacement=""/>
-		<kbhit replacement=""/>
-		<lowvideo replacement=""/>
-		<movetext replacement=""/>
-		<normvideo replacement=""/>
-		<outp replacement=""/>
-		<outport replacement=""/>
-		<outportb replacement=""/>
-		<outw replacement=""/>
-		<putch replacement=""/>
-		<puttext replacement=""/>
-		<_setcursortype replacement=""/>
-		<textattr replacement=""/>
-		<textbackground replacement=""/>
-		<textcolor replacement=""/>
-		<textmode replacement=""/>
-		<ungetch replacement=""/>
-		<wherex replacement=""/>
-		<wherey replacement=""/>
-		<window replacement=""/>
-	</conio.h>
+</functions>
+	<!-- <conio.h replacement=""> -->
+		<function name="cgets" replacement="" header=""/>
+		<function name="clreol" replacement="" header=""/>
+		<function name="clrscr" replacement="" header=""/>
+		<function name="cprintf" replacement="" header=""/>
+		<function name="cputs" replacement="" header=""/>
+		<function name="cscanf" replacement="" header=""/>
+		<function name="delline" replacement="" header=""/>
+		<function name="getch" replacement="" header=""/>
+		<function name="getche" replacement="" header=""/>
+		<function name="getpass" replacement="" header=""/>
+		<function name="gettext" replacement="" header=""/>
+		<function name="gettextinfo" replacement="" header=""/>
+		<function name="gotoxy" replacement="" header=""/>
+		<function name="highvideo" replacement="" header=""/>
+		<function name="insline" replacement="" header=""/>
+		<function name="inp" replacement="" header=""/>
+		<function name="inport" replacement="" header=""/>
+		<function name="inportb" replacement="" header=""/>
+		<function name="inpw" replacement="" header=""/>
+		<function name="kbhit" replacement="" header=""/>
+		<function name="lowvideo" replacement="" header=""/>
+		<function name="movetext" replacement="" header=""/>
+		<function name="normvideo" replacement="" header=""/>
+		<function name="outp" replacement="" header=""/>
+		<function name="outport" replacement="" header=""/>
+		<function name="outportb" replacement="" header=""/>
+		<function name="outw" replacement="" header=""/>
+		<function name="putch" replacement="" header=""/>
+		<function name="puttext" replacement="" header=""/>
+		<function name="_setcursortype" replacement="" header=""/>
+		<function name="textattr" replacement="" header=""/>
+		<function name="textbackground" replacement="" header=""/>
+		<function name="textcolor" replacement="" header=""/>
+		<function name="textmode" replacement="" header=""/>
+		<function name="ungetch" replacement="" header=""/>
+		<function name="wherex" replacement="" header=""/>
+		<function name="wherey" replacement="" header=""/>
+		<function name="window" replacement="" header=""/>
+	<!-- </conio.h> -->
+</functions>
 </c>
