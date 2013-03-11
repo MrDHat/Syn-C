@@ -30,7 +30,7 @@ class parser {
 	public:
 
 		parser();
-		int create_function_map(string, string);
+		int create_function_map(string key, string value);
 		int xml_reader();
 
 };

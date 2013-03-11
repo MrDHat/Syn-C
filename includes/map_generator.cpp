@@ -11,6 +11,7 @@ parser::parser() {
 
 int parser::xml_reader() {
 	char header_it;
+	string header, replacement, function_name, value;
 	string src("");
 	for(header_it= 'a' ; header_it<= 'z' ; header_it++) {
 		src+= xml_path;
@@ -20,19 +21,23 @@ int parser::xml_reader() {
 		if(xml_result){
 			xml_tool= xml_header_file.child("a").child("functions");
 			for(child_tool= xml_tool.child("function"); child_tool; child_tool = child_tool.next_sibling("function")){
-				cout << "Name " << child_tool.attribute("name").value() << "\n";
+				
+				function_name = child_tool.attribute("name").value();
+				replacement = child_tool.attribute("replacement").value();
+				header = child_tool.attribute("header").value();
+				value+= replacement + ";" + header; 
+				/*cout << "Name " << function_name << "\n";
+				cout << "rep " << replacement << "\n";
+				cout << "header " << header << "\n";
+				cout << "Value " << value << "\n";*/
+				create_function_map(function_name, value);
+				value=""; // Reinitialize value
 			}
 		}
 	}
+
 }
 
 int parser::create_function_map(string key, string value) {
-
-}
-
-int main()
-{
-	parser obj;
-	obj.xml_reader();
-	return 0;
+	function_map[key] = value ;
 }
