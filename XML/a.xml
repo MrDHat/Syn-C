@@ -1,6 +1,6 @@
 <a>
 	<functions>
-		<function name="arc" replacement="fu" header="fufu"/>
+		<function name="arc" replacement="" header=""/>
 		<function name="brk" replacement="" header=""/>
 		<function name="calloc" replacement="" header=""/>
 		<function name="coreleft" replacement="" header=""/>

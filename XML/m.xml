@@ -1,23 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <m>
 	<mem.h replacement="">		
-	    <_fmemccpy replacement=""/>
-	    <_fmemchr replacement=""/>
-	    <_fmemcmp replacement=""/>
-	    <_fmemcpy replacement=""/>
-	    <_fmemicmp replacement=""/>
-	    <_fmemmove replacement=""/>
-	    <_fmemset replacement=""/>
-	    <_fmovmem replacement=""/>
-	    <_fsetmem replacement=""/>
-	    <memccpy replacement=""/>
-	    <memchr replacement=""/>
-	    <memcmp replacement=""/>
-	    <memcpy replacement=""/>
-	    <memicmp replacement=""/>
-	    <memmove replacement=""/>
-	    <memset replacement=""/>
-	    <movedata replacement=""/>
-	    <movmem replacement=""/>
-	    <setmem replacement=""/>
+	    <_fmemccpy replacement="" header=""/>
+	    <_fmemchr replacement="" header=""/>
+	    <_fmemcmp replacement="" header=""/>
+	    <_fmemcpy replacement="" header=""/>
+	    <_fmemicmp replacement="" header=""/>
+	    <_fmemmove replacement="" header=""/>
+	    <_fmemset replacement="" header=""/>
+	    <_fmovmem replacement="" header=""/>
+	    <_fsetmem replacement="" header=""/>
+	    <memccpy replacement="" header=""/>
+	    <memchr replacement="" header=""/>
+	    <memcmp replacement="" header=""/>
+	    <memcpy replacement="" header=""/>
+	    <memicmp replacement="" header=""/>
+	    <memmove replacement="" header=""/>
+	    <memset replacement="" header=""/>
+	    <movedata replacement="" header=""/>
+	    <movmem replacement="" header=""/>
+	    <setmem replacement="" header=""/>
 	</mem.h>
 </m>
