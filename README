@@ -1,1 +1,22 @@
 Turbo C code to ANSI C code converter
+
+Input: Turbo C compliant code
+Output Generated: Equivalent ANSI C code
+
+Lexical Analysis performed using C-Source Scanner [https://code.google.com/p/c-source-scanner/]
+XML Parsing uses PugiXML [http://pugixml.org/]
+
+Dependencies:
+1. GCC-G++
+2. Make
+3. FLEX [http://flex.sourceforge.net/]
+4. Java Development Kit
+
+
+Authors:
+Akshay Katyal | MrDHat
+Rachit Gupta | R4CHi7
+Sidharth Kathuria | siddharth124
+
+
+Licensed under GNU GPLv3
