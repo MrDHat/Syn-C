@@ -18,7 +18,6 @@
 
 
 #include "map_generator.h"
-#include <iostream>
 
 using namespace std;
 

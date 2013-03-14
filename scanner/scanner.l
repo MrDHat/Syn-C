@@ -1,4 +1,24 @@
-/*
+/* 
+============================================================================
+* Program Name 	: scanner.l
+* Author		: #B96902133, Hakki Caner Kirmizi
+* Description		: A C source code scanner written with flex.
+* Environment		: Windows-7 Entreprise
+* Editor		: vim 7.2 for WIN 
+* Integration Tests	: linux2.csie.ntu.edu.tw
+* Flex			: 2.5.35
+* Compiler		: gcc (Debian 4.4.3-3) 4.4.3
+* Version Control	: TortoiseSVN 1.6.7, Build 18415 - 32 Bit
+* Project Hosting	: http://code.google.com/p/c-source-scanner/
+* 
+* INSTRUCTIONS
+* ------------
+* Build		: flex scanner.l
+* Compile		: gcc lex.yy.c
+* Run			: There are two options...
+*  1) a.out [input-filename] // recommended for long source codes
+*  2) a.out // hit enter and use stdin; BE AWARE OF BUFFER SIZE!!!
+* 
 * DETAILS
 * -------
 * c-source-scanner is written for these purposes:
@@ -66,13 +86,34 @@ C source file near the beginning, before the beginning of yylex() */
 #define CHARSYM "char"
 #define INTSYM "int"
 #define VOIDSYM "void"
+#define AUTOSYM "auto"
+#define EXTERNSYM "extern"	
+#define FLOATSYM "float"
+#define DOUBLESYM "double"
+#define SWITCHSYM "switch"
+#define CASESYM "case"
+#define CONSTSYM "const"
+#define DEFAULTSYM "default"
+#define LONGSYM "long"			
+#define REGISTERSYM "register"
+#define SHORTSYM "short"		
+#define SIGNEDSYM "signed"
+#define STATICSYM "static"
+#define UNSIGNEDSYM "unsigned"
 #define IFSYM "if"
 #define ELSESYM "else"
 #define WHILESYM "while"
+#define DOSYM "do"
 #define FORSYM "for"
 #define CONTINUESYM "continue"
 #define BREAKSYM "break"
 #define RETURNSYM "return"
+#define ENUMSYM "enum"		
+#define STRUCTSYM "struct"
+#define UNIONSYM "union"	
+#define GOTOSYM "goto"
+#define SIZEOFSYM "sizeof"
+#define TYPEDEFSYM "typedef"
 #define IDENTIFIER 258
 #define INTEGER 259
 #define STRING 260
@@ -199,6 +240,27 @@ COMMENT ("/*"([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*"*"+"/")|("//".*)
 "continue" { printf("%s\n", CONTINUESYM); }
 "break" { printf("%s\n", BREAKSYM); }
 "return" { printf("%s\n", RETURNSYM); }
+"auto" { printf("%s\n", AUTOSYM); }
+"extern" { printf("%s\n", EXTERNSYM); }	
+"float" { printf("%s\n", FLOATSYM); }
+"double" { printf("%s\n", DOUBLESYM); }
+"switch" { printf("%s\n", SWITCHSYM); }
+"case" { printf("%s\n", CASESYM); }
+"const" { printf("%s\n", CONSTSYM); }
+"default" { printf("%s\n", DEFAULTSYM); }
+"long" { printf("%s\n", LONGSYM); }
+"register" { printf("%s\n", REGISTERSYM); }
+"short" { printf("%s\n", SHORTSYM); }
+"signed" { printf("%s\n", SIGNEDSYM); }
+"static" { printf("%s\n", STATCISYM); }
+"unsigned" { printf("%s\n", UNSIGNEDSYM); }
+"do" { printf("%s\n", DOSYM); }
+"enum" { printf("%s\n", ENUMSYM); }
+"struct" { printf("%s\n", STRUCTSYM); }
+"union"	{ printf("%s\n", UNIONSYM); }
+"goto" { printf("%s\n", GOTOSYM); }
+"sizeof" { printf("%s\n", SIZEOFSYM); }
+"typedef" { printf("%s\n", TYPEDEFSYM); }
 
  /* RULES FOR IDENTIFIIERS */
  /* ---------------------- */
