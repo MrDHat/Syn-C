@@ -17,14 +17,14 @@
 
 
 /*
-Contains Queue functions [Works on character pointers instead of std::strings]
+Contains Queue functions
 */
 
 #ifndef queue_h__
 #define queue_h__
 
-#include <string>
 #include <queue>
+#include <string>
 
 using namespace std;
 
@@ -36,7 +36,8 @@ class queue_ops
     public:
         queue_ops();
         ~queue_ops();
-        void push_into_queue(string entry, int identifier);  //Identifier determines the type of queue, 1=> Input Queue | 2=> Output Queue
+        void push_into_queue(string entry, int identifier, int direct_flag);  //Identifier determines the type of queue, 1=> Input Queue | 2=> Output Queue
+        //For direct_flag, if=1 => to be inserted directly into the output_queue | if=2 => value to be looked up in hash map | if=3 => A header file
         string pop_from_queue(int identifier);
 };
 

@@ -19,16 +19,41 @@
 
 using namespace std;
 
-void queue_ops::push_into_queue(string entry, int identifier){
+queue_ops::queue_ops(){
 
-    if(identifier == 1){
-        input_queue.push(entry);
+}
+
+queue_ops::~queue_ops(){
+
+}
+
+void queue_ops::push_into_queue(string entry, int identifier, int direct_flag){
+    //Identifier determines the type of queue, 1=> Input Queue | 2=> Output Queue
+    //For direct_flag, if=1 => to be inserted directly into the output_queue | if=2 => value to be looked up in hash map | if=3 => A header file
+
+    if(direct_flag == 1){
+        if(identifier == 1){
+            input_queue.push(entry);
+        }
+
+        else if(identifier == 2){
+            output_queue.push(entry);        
+        }
     }
-
-    else if(identifier == 2){
-        output_queue.push(entry);        
+    else if (direct_flag == 2)  //=> An identifier which cannot be stored directly
+    {
+        if (identifier == 1)
+        {
+            //Check for value in hash map
+        }
     }
-
+    else if (direct_flag == 3)  //=> A header file
+    {
+        if (identifier == 1)
+        {
+            // Code for tackling header file 
+        }
+    }
 }
 
 string queue_ops::pop_from_queue(int identifier){
