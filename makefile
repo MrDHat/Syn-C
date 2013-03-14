@@ -3,6 +3,7 @@ all: map_generate
 
 map_generate: pugixml
 	g++ -c includes/map_generator.cpp -std=c++11
+	g++ -c includes/queue_ops.cpp
 
 pugixml: 
 	g++ -c includes/PugiXML/pugixml.cpp
