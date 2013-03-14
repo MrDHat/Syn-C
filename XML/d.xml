@@ -1,163 +1,165 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <d>
-	<dir.h replacement="">
-		<chdir replacement="" header=""/>
-		<findfirst replacement="" header=""/>
-		<findnext replacement="" header=""/>
-		<fnmerge replacement="" header=""/>
-		<fnsplit replacement="" header=""/>
-		<getcurdir replacement="" header=""/>
-		<getcwd replacement="" header=""/>
-		<getdisk replacement="" header=""/>
-		<mkdir replacement="" header=""/>
-		<mktemp replacement="" header=""/>
-		<rmdir replacement="" header=""/>
-		<searchpath replacement="" header=""/>
-		<setdisk replacement="" header=""/>
-		<DIRECTORY replacement="" constant="true" header=""/>
-		<DRIVE replacement="" constant="true" header=""/>
-		<MAXDRIVE replacement="" constant="true" header=""/>
-		<MAXDIR replacement="" constant="true" header=""/>
-		<EXTENSIONS replacement="" constant="true" header=""/>
-		<MAXEXT replacement="" constant="true" header=""/>
-		<ffblk replacement="" constant="true" header=""/>
-		<FILENAME replacement="" constant="true" header=""/>
-		<MAXFILE replacement="" constant="true" header=""/>
-		<MAXPATH replacement="" constant="true" header=""/>
-	</dir.h>
-	<dos.h replacement="">
-		<absread replacement="" header=""/>
-		<abswrite replacement="" header=""/>
-		<allocmem replacement="" header=""/>
-		<bdos replacement="" header=""/>
-		<bdosptr replacement="" header=""/>
-		<_chain_intr replacement="" header=""/>
-		<country replacement="" header=""/>
-		<ctrlbrk replacement="" header=""/>
-		<delay replacement="" header=""/>
-		<disable replacement="" header="">
-		<_dos_allocmem replacement="" header=""/>
-		<_dos_close replacement="" header=""/>
-		<_dos_creat replacement="" header=""/>
-		<_dos_creatnew replacement="" header=""/>
-		<dosexterr replacement="" header=""/>
-		<_dos_findfirst replacement="" header=""/>
-		<_dos_findnext replacement="" header=""/>
-		<_dos_freemem replacement="" header=""/>
-		<_dos_getdate replacement="" header=""/>
-		<_dos_getdiskfree replacement="" header=""/>
-		<_dos_getdrive replacement="" header=""/>
-		<_dos_getfileattr replacement="" header=""/>
-		<_dos_getftime replacement="" header=""/>
-		<_dos_gettime replacement="" header=""/>
-		<_dos_getvect replacement="" header=""/>
-		<_dos_keep replacement="" header=""/>
-		<_dos_open replacement="" header=""/>
-		<_dos_read replacement="" header=""/>
-		<_dos_setblock replacement="" header=""/>
-		<_dos_setdate replacement="" header=""/>
-		<_dos_setdrive replacement="" header=""/>
-		<_dos_setfileattr replacement="" header=""/>
-		<_dos_setftime replacement="" header=""/>
-		<_dos_settime replacement="" header=""/>
-		<_dos_setvect replacement="" header=""/>
-		<dostounix replacement="" header=""/>
-		<_dos_write replacement="" header=""/>
-		<_emit_ replacement="" header=""/>
-		<enable replacement="" header=""/>
-		<FP_OFF replacement="" header=""/>
-		<FP_SEG replacement="" header=""/>
-		<freemem replacement="" header=""/>
-		<geninterrupt replacement="" header=""/>
-		<getcbrk replacement="" header=""/>
-		<getdate replacement="" header=""/>
-		<getdfree replacement="" header=""/>
-		<_getdrive replacement="" header=""/>
-		<getdta replacement="" header=""/>
-		<getfat replacement="" header=""/>
-		<getfatd replacement="" header=""/>
-		<getftime replacement="" header=""/>
-		<getpsp replacement="" header=""/>
-		<gettime replacement="" header=""/>
-		<getvect replacement="" header=""/>
-		<getverify replacement="" header=""/>
-		<_harderr replacement="" header=""/>
-		<harderr replacement="" header=""/>
-		<_hardresume replacement="" header=""/>
-		<hardresume replacement="" header=""/>
-		<_hardretn replacement="" header=""/>
-		<hardretn replacement="" header=""/>
-		<inp replacement="" header=""/>
-		<inport replacement="" header=""/>
-		<inportb replacement="" header=""/>
-		<int86 replacement="" header=""/>
-		<int86x replacement="" header=""/>
-		<intdos replacement="" header=""/>
-		<intdosx replacement="" header=""/>
-		<intr replacement="" header=""/>
-		<keep replacement="" header=""/>
-		<MK_FP replacement="" header=""/>
-		<nosound replacement="" header=""/>
-		<outp replacement="" header=""/>
-		<outport replacement="" header=""/>
-		<outportb replacement="" header=""/>
-		<_OvrInitEms replacement="" header=""/>
-		<_OvrInitExt replacement="" header=""/>
-		<parsfnm replacement="" header=""/>
-		<peek replacement="" header=""/>
-		<peekb replacement="" header=""/>
-		<poke replacement="" header=""/>
-		<pokeb replacement="" header=""/>
-		<randbrd replacement="" header=""/>
-		<randbwr replacement="" header=""/>
-		<segread replacement="" header=""/>
-		<setblock replacement="" header=""/>
-		<setcbrk replacement="" header=""/>
-		<setdate replacement="" header=""/>
-		<setdta replacement="" header=""/>
-		<settime replacement="" header=""/>
-		<setvect replacement="" header=""/>
-		<setverify replacement="" header=""/>
-		<sleep replacement="" header=""/>
-		<sound replacement="" header=""/>
-		<unixtodos replacement="" header=""/>
-		<unlink replacement="" header=""/>
-		<_8087 replacement="" constant="true" header=""/>
-		<_argc replacement="" constant="true" header=""/>
-		<_argv replacement="" constant="true" header=""/>
-		<BYTEREGS replacement="" constant="true" header=""/>
-		<COUNTRY replacement="" constant="true" header=""/>
-		<date replacement="" constant="true" header=""/>
-		<devhdr replacement="" constant="true" header=""/>
-		<dfree replacement="" constant="true" header=""/>
-		<diskfree_t replacement="" constant="true" header=""/>
-		<dosdate_t replacement="" constant="true" header=""/>
-		<DOSERROR replacement="" constant="true" header=""/>
-		<dostime_t replacement="" constant="true" header=""/>
-		<_doserrno replacement="" constant="true" header=""/>
-		<dosSearchInfo replacement="" constant="true" header=""/>
-		<environ replacement="" constant="true" header=""/>
-		<fatinfo replacement="" constant="true" header=""/>
-		<fcb replacement="" constant="true" header=""/>
-		<FA_* replacement="" constant="true" header=""/>
-		<ffblk replacement="" constant="true" header=""/>
-		<_heaplen replacement="" constant="true" header=""/>
-		<NFDS replacement="" constant="true" header=""/>
-		<_osmajor replacement="" constant="true" header=""/>
-		<_osminor replacement="" constant="true" header=""/>
-		<_osversion replacement="" constant="true" header=""/>
-		<_psp replacement="" constant="true" header=""/>
-		<REGPACK replacement="" constant="true" header=""/>
-		<REGS replacement="" constant="true" header=""/>
-		<SEEK_CUR replacement="" constant="true" header=""/>
-		<SEEK_END replacement="" constant="true" header=""/>
-		<SEEK_SET replacement="" constant="true" header=""/>
-		<SREGS replacement="" constant="true" header=""/>
-		<_stklen replacement="" constant="true" header=""/>
-		<time replacement="" constant="true" header=""/>
-		<_version replacement="" constant="true" header=""/>
-		<WORDREGS replacement="" constant="true" header=""/>
-		<xfcb replacement="" constant="true" header=""/>
+	<functions>
+	<!-- <dir.h replacement=""> -->
+		<function name="chdir" replacement="" header=""/>
+		<function name="findfirst" replacement="" header=""/>
+		<function name="findnext" replacement="" header=""/>
+		<function name="fnmerge" replacement="" header=""/>
+		<function name="fnsplit" replacement="" header=""/>
+		<function name="getcurdir" replacement="" header=""/>
+		<function name="getcwd" replacement="" header=""/>
+		<function name="getdisk" replacement="" header=""/>
+		<function name="mkdir" replacement="" header=""/>
+		<function name="mktemp" replacement="" header=""/>
+		<function name="rmdir" replacement="" header=""/>
+		<function name="searchpath" replacement="" header=""/>
+		<function name="setdisk" replacement="" header=""/>
+		<function name="DIRECTORY" replacement="" constant="true" header=""/>
+		<function name="DRIVE" replacement="" constant="true" header=""/>
+		<function name="MAXDRIVE" replacement="" constant="true" header=""/>
+		<function name="MAXDIR" replacement="" constant="true" header=""/>
+		<function name="EXTENSIONS" replacement="" constant="true" header=""/>
+		<function name="MAXEXT" replacement="" constant="true" header=""/>
+		<function name="ffblk" replacement="" constant="true" header=""/>
+		<function name="FILENAME" replacement="" constant="true" header=""/>
+		<function name="MAXFILE" replacement="" constant="true" header=""/>
+		<function name="MAXPATH" replacement="" constant="true" header=""/>
+	<!--  </dir.h> -->
+	<!--  <dos.h replacement=""> -->
+		<function name="absread" replacement="" header=""/>
+		<function name="abswrite" replacement="" header=""/>
+		<function name="allocmem" replacement="" header=""/>
+		<function name="bdos" replacement="" header=""/>
+		<function name="bdosptr" replacement="" header=""/>
+		<function name="_chain_intr" replacement="" header=""/>
+		<function name="country" replacement="" header=""/>
+		<function name="ctrlbrk" replacement="" header=""/>
+		<function name="delay" replacement="" header=""/>
+		<function name="disable" replacement="" header="">
+		<function name="_dos_allocmem" replacement="" header=""/>
+		<function name="_dos_close" replacement="" header=""/>
+		<function name="_dos_creat" replacement="" header=""/>
+		<function name="_dos_creatnew" replacement="" header=""/>
+		<function name="dosexterr" replacement="" header=""/>
+		<function name="_dos_findfirst" replacement="" header=""/>
+		<function name="_dos_findnext" replacement="" header=""/>
+		<function name="_dos_freemem" replacement="" header=""/>
+		<function name="_dos_getdate" replacement="" header=""/>
+		<function name="_dos_getdiskfree" replacement="" header=""/>
+		<function name="_dos_getdrive" replacement="" header=""/>
+		<function name="_dos_getfileattr" replacement="" header=""/>
+		<function name="_dos_getftime" replacement="" header=""/>
+		<function name="_dos_gettime" replacement="" header=""/>
+		<function name="_dos_getvect" replacement="" header=""/>
+		<function name="_dos_keep" replacement="" header=""/>
+		<function name="_dos_open" replacement="" header=""/>
+		<function name="_dos_read" replacement="" header=""/>
+		<function name="_dos_setblock" replacement="" header=""/>
+		<function name="_dos_setdate" replacement="" header=""/>
+		<function name="_dos_setdrive" replacement="" header=""/>
+		<function name="_dos_setfileattr" replacement="" header=""/>
+		<function name="_dos_setftime" replacement="" header=""/>
+		<function name="_dos_settime" replacement="" header=""/>
+		<_function name="_dos_setvect" replacement="" header=""/>
+		<function name="dostounix" replacement="" header=""/>
+		<function name="_dos_write" replacement="" header=""/>
+		<function name="_emit_" replacement="" header=""/>
+		<function name="enable" replacement="" header=""/>
+		<function name="FP_OFF" replacement="" header=""/>
+		<function name="FP_SEG" replacement="" header=""/>
+		<function name="freemem" replacement="" header=""/>
+		<function name="geninterrupt" replacement="" header=""/>
+		<function name="getcbrk" replacement="" header=""/>
+		<function name="getdate" replacement="" header=""/>
+		<function name="getdfree" replacement="" header=""/>
+		<function name="_getdrive" replacement="" header=""/>
+		<function name="getdta" replacement="" header=""/>
+		<function name="getfat" replacement="" header=""/>
+		<function name="getfatd" replacement="" header=""/>
+		<function name="getftime" replacement="" header=""/>
+		<function name="getpsp" replacement="" header=""/>
+		<function name="gettime" replacement="" header=""/>
+		<function name="getvect" replacement="" header=""/>
+		<function name="getverify" replacement="" header=""/>
+		<function name="_harderr" replacement="" header=""/>
+		<function name="harderr" replacement="" header=""/>
+		<function name="_hardresume" replacement="" header=""/>
+		<function name="hardresume" replacement="" header=""/>
+		<function name="_hardretn" replacement="" header=""/>
+		<function name="hardret"n replacement="" header=""/>
+		<function name="inp" replacement="" header=""/>
+		<function name="inport" replacement="" header=""/>
+		<function name="inportb" replacement="" header=""/>
+		<function name="int86" replacement="" header=""/>
+		<function name="int86x" replacement="" header=""/>
+		<function name="intdos" replacement="" header=""/>
+		<function name="intdosx" replacement="" header=""/>
+		<function name="intr" replacement="" header=""/>
+		<function name="keep" replacement="" header=""/>
+		<function name="MK_FP" replacement="" header=""/>
+		<function name="nosound" replacement="" header=""/>
+		<function name="outp" replacement="" header=""/>
+		<function name="outport" replacement="" header=""/>
+		<function name="outportb" replacement="" header=""/>
+		<function name="_OvrInitEms" replacement="" header=""/>
+		<function name="_OvrInitExt" replacement="" header=""/>
+		<function name="parsfnm" replacement="" header=""/>
+		<function name="peek" replacement="" header=""/>
+		<function name="peekb" replacement="" header=""/>
+		<function name="poke" replacement="" header=""/>
+		<function name="pokeb" replacement="" header=""/>
+		<function name="randbrd" replacement="" header=""/>
+		<function name="randbwr" replacement="" header=""/>
+		<function name="segread" replacement="" header=""/>
+		<function name="setblock" replacement="" header=""/>
+		<function name="setcbrk" replacement="" header=""/>
+		<function name="setdate" replacement="" header=""/>
+		<function name="setdta" replacement="" header=""/>
+		<function name="settime" replacement="" header=""/>
+		<function name="setvect" replacement="" header=""/>
+		<function name="setverify" replacement="" header=""/>
+		<function name="sleep" replacement="" header=""/>
+		<function name="sound" replacement="" header=""/>
+		<function name="unixtodos" replacement="" header=""/>
+		<function name="unlink" replacement="" header=""/>
+		<function name="_8087" replacement="" constant="true" header=""/>
+		<function name="_argc" replacement="" constant="true" header=""/>
+		<function name="_argv" replacement="" constant="true" header=""/>
+		<function name="BYTEREGS" replacement="" constant="true" header=""/>
+		<function name="COUNTRY" replacement="" constant="true" header=""/>
+		<function name="date" replacement="" constant="true" header=""/>
+		<function name="devhdr" replacement="" constant="true" header=""/>
+		<function name="dfree" replacement="" constant="true" header=""/>
+		<function name="diskfree_t" replacement="" constant="true" header=""/>
+		<function name="dosdate_t" replacement="" constant="true" header=""/>
+		<function name="DOSERROR" replacement="" constant="true" header=""/>
+		<function name="dostime_t" replacement="" constant="true" header=""/>
+		<function name="_doserrno" replacement="" constant="true" header=""/>
+		<function name="dosSearchInfo" replacement="" constant="true" header=""/>
+		<function name="environ" replacement="" constant="true" header=""/>
+		<function name="fatinfo" replacement="" constant="true" header=""/>
+		<function name="fcb" replacement="" constant="true" header=""/>
+		<function name="FA_*" replacement="" constant="true" header=""/>
+		<function name="ffblk" replacement="" constant="true" header=""/>
+		<function name="_heaplen" replacement="" constant="true" header=""/>
+		<function name="NFDS" replacement="" constant="true" header=""/>
+		<function name="_osmajor" replacement="" constant="true" header=""/>
+		<function name="_osminor" replacement="" constant="true" header=""/>
+		<function name="_osversion" replacement="" constant="true" header=""/>
+		<function name="_psp" replacement="" constant="true" header=""/>
+		<function name="REGPACK" replacement="" constant="true" header=""/>
+		<function name="REGS" replacement="" constant="true" header=""/>
+		<function name="SEEK_CUR" replacement="" constant="true" header=""/>
+		<function name="SEEK_END" replacement="" constant="true" header=""/>
+		<function name="SEEK_SET" replacement="" constant="true" header=""/>
+		<function name="SREGS" replacement="" constant="true" header=""/>
+		<function name="_stklen" replacement="" constant="true" header=""/>
+		<function name="time" replacement="" constant="true" header=""/>
+		<function name="_version" replacement="" constant="true" header=""/>
+		<function name="WORDREGS" replacement="" constant="true" header=""/>
+		<function name="xfcb" replacement="" constant="true" header=""/>
 
-	</dos.h>
+	<!--  </dos.h> -->
+	</functions>
 </d>

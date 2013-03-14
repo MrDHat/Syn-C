@@ -57,7 +57,6 @@
 /* ' The literal block %{ ... %} ' in this part is copied to verbatim to the generated
 C source file near the beginning, before the beginning of yylex() */
 %{
-/* Included for queue operations */
 #include "queue_ops.h"
 #define PLUS "+"
 #define MINUS "-"
@@ -123,6 +122,7 @@ C source file near the beginning, before the beginning of yylex() */
 #define COMMENT 262
 
 queue_ops queue_obj;
+
 %}
 
 /* DEFINITIONS FOR FINITE AUTOMATA */
@@ -161,17 +161,17 @@ COMMENT ("/*"([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*"*"+"/")|("//".*)
  /* ------------------------------------ */
 "+" { printf("%s\n", PLUS); queue_obj.push_into_queue(PLUS, 1, 1); }
 "-" { printf("%s\n", MINUS); queue_obj.push_into_queue(MINUS, 1, 1); }
-"*" { printf("%s\n", MULT); queue_obj.push_into_queue(MULT, 1, 1); }
+"*" { printf("%s\n", MULT);  queue_obj.push_into_queue(MULT, 1, 1); }
 "/" { printf("%s\n", DIV); queue_obj.push_into_queue(DIV, 1, 1); }
 "%" { printf("%s\n", PERCENT); queue_obj.push_into_queue(PERCENT, 1, 1); }
 "&&" { printf("%s\n", LAND); queue_obj.push_into_queue(LAND, 1, 1); }
 "||" { printf("%s\n", LOR); queue_obj.push_into_queue(LOR, 1, 1); }
 "!" { printf("%s\n", LNOT); queue_obj.push_into_queue(LNOT, 1, 1); }
-"<" { printf("%s\n", LESSTHAN); queue_obj.push_into_queue(LESSTHAN, 1, 1); }
+"<" { printf("%s\n", LESSTHAN); queue_obj.push_into_queue(LESSTHAN, 1, 1);  }
 ">" { printf("%s\n", GREATERTHAN); queue_obj.push_into_queue(GREATERTHAN, 1, 1); }
 "<=" { printf("%s\n", LTEQUAL); queue_obj.push_into_queue(LTEQUAL, 1, 1); }
 ">=" { printf("%s\n", GTEQUAL); queue_obj.push_into_queue(GTEQUAL, 1, 1); }
-"==" { printf("%s\n", EQUAL); queue_obj.push_into_queue(EQUAL, 1, 1); }
+"==" { printf("%s\n", EQUAL);  queue_obj.push_into_queue(EQUAL, 1, 1); }
 "!=" { printf("%s\n", NOTEQUAL); queue_obj.push_into_queue(NOTEQUAL, 1, 1); }
 "&" { printf("%s\n", BITAND); queue_obj.push_into_queue(BITAND, 1, 1); }
 "|" { printf("%s\n", BITOR); queue_obj.push_into_queue(BITOR, 1, 1); }
@@ -183,36 +183,36 @@ COMMENT ("/*"([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*"*"+"/")|("//".*)
 "{" { printf("%s\n", LCURLY); queue_obj.push_into_queue(LCURLY, 1, 1); }
 "}" { printf("%s\n", RCURLY); queue_obj.push_into_queue(RCURLY, 1, 1); }
 "," { printf("%s\n", COMMA); queue_obj.push_into_queue(COMMA, 1, 1); }
-";" { printf("%s\n", SEMICOLON); queue_obj.push_into_queue(SEMICOLON, 1, 1); }
+";" { printf("HELLO!!!!!! %s\n", SEMICOLON); queue_obj.push_into_queue(SEMICOLON, 1, 1); }
 "=" { printf("%s\n", ASSIGN); queue_obj.push_into_queue(ASSIGN, 1, 1); }
 
  /* RULES FOR KEYWORDS */
  /* ------------------ */
-"char" { printf("%s\n", CHARSYM); queue_obj.push_into_queue(CHARSYM, 1, 1); }
+"char" { printf("%s\n", CHARSYM); queue_obj.push_into_queue(CHARSYM, 1, 1);  }
 "int" { printf("%s\n", INTSYM); queue_obj.push_into_queue(INTSYM, 1, 1); }
-"void" { printf("%s\n", VOIDSYM); queue_obj.push_into_queue(VOIDSYM, 1, 1); }
-"if" { printf("%s\n", IFSYM); queue_obj.push_into_queue(IFSYM, 1, 1); }
-"else" { printf("%s\n", ELSESYM); queue_obj.push_into_queue(ELSESYM, 1, 1); }
-"while" { printf("%s\n", WHILESYM); queue_obj.push_into_queue(WHILESYM, 1, 1); }
+"void" { printf("%s\n", VOIDSYM);  queue_obj.push_into_queue(VOIDSYM, 1, 1); }
+"if" { printf("%s\n", IFSYM);  queue_obj.push_into_queue(IFSYM, 1, 1); }
+"else" { printf("%s\n", ELSESYM);  queue_obj.push_into_queue(ELSESYM, 1, 1); }
+"while" { printf("%s\n", WHILESYM); queue_obj.push_into_queue(WHILESYM, 1, 1);  }
 "for" { printf("%s\n", FORSYM); queue_obj.push_into_queue(FORSYM, 1, 1); }
 "continue" { printf("%s\n", CONTINUESYM); queue_obj.push_into_queue(CONTINUESYM, 1, 1); }
-"break" { printf("%s\n", BREAKSYM); queue_obj.push_into_queue(BREAKSYM, 1, 1); }
-"return" { printf("%s\n", RETURNSYM); queue_obj.push_into_queue(RETURNSYM, 1, 1); }
+"break" { printf("%s\n", BREAKSYM); queue_obj.push_into_queue(BREAKSYM, 1, 1);  }
+"return" { printf("%s\n", RETURNSYM); queue_obj.push_into_queue(RETURNSYM, 1, 1);  }
 "auto" { printf("%s\n", AUTOSYM); queue_obj.push_into_queue(AUTOSYM, 1, 1); }
-"extern" { printf("%s\n", EXTERNSYM); queue_obj.push_into_queue(EXTERNSYM, 1, 1); }	
-"float" { printf("%s\n", FLOATSYM); queue_obj.push_into_queue(FLOATSYM, 1, 1); }
-"double" { printf("%s\n", DOUBLESYM); queue_obj.push_into_queue(DOUBLESYM, 1, 1); }
-"switch" { printf("%s\n", SWITCHSYM); queue_obj.push_into_queue(SWITCHSYM, 1, 1); }
+"extern" { printf("%s\n", EXTERNSYM); queue_obj.push_into_queue(EXTERNSYM, 1, 1);  }	
+"float" { printf("%s\n", FLOATSYM); queue_obj.push_into_queue(FLOATSYM, 1, 1);  }
+"double" { printf("%s\n", DOUBLESYM); queue_obj.push_into_queue(DOUBLESYM, 1, 1);  }
+"switch" { printf("%s\n", SWITCHSYM); queue_obj.push_into_queue(SWITCHSYM, 1, 1);  }
 "case" { printf("%s\n", CASESYM); queue_obj.push_into_queue(CASESYM, 1, 1); }
 "const" { printf("%s\n", CONSTSYM); queue_obj.push_into_queue(CONSTSYM, 1, 1); }
 "default" { printf("%s\n", DEFAULTSYM); queue_obj.push_into_queue(DEFAULTSYM, 1, 1); }
 "long" { printf("%s\n", LONGSYM); queue_obj.push_into_queue(LONGSYM, 1, 1); }
-"register" { printf("%s\n", REGISTERSYM); queue_obj.push_into_queue(REGISTERSYM, 1, 1); }
+"register" { printf("%s\n", REGISTERSYM);queue_obj.push_into_queue(REGISTERSYM, 1, 1); }
 "short" { printf("%s\n", SHORTSYM); queue_obj.push_into_queue(SHORTSYM, 1, 1); }
 "signed" { printf("%s\n", SIGNEDSYM); queue_obj.push_into_queue(SIGNEDSYM, 1, 1); }
 "static" { printf("%s\n", STATICSYM); queue_obj.push_into_queue(STATICSYM, 1, 1); }
 "unsigned" { printf("%s\n", UNSIGNEDSYM); queue_obj.push_into_queue(UNSIGNEDSYM, 1, 1); }
-"do" { printf("%s\n", DOSYM); queue_obj.push_into_queue(DOSYM, 1, 1); }
+"do" { printf("%s\n", DOSYM); queue_obj.push_into_queue(DOSYM, 1, 1);  }
 "enum" { printf("%s\n", ENUMSYM); queue_obj.push_into_queue(ENUMSYM, 1, 1); }
 "struct" { printf("%s\n", STRUCTSYM); queue_obj.push_into_queue(STRUCTSYM, 1, 1); }
 "union"	{ printf("%s\n", UNIONSYM); queue_obj.push_into_queue(UNIONSYM, 1, 1); }
@@ -229,18 +229,16 @@ COMMENT ("/*"([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*"*"+"/")|("//".*)
 {INTEGER} { printf("%s\n",yytext); queue_obj.push_into_queue(yytext, 1, 1); }
 {STRING} { printf("%s\n",yytext); queue_obj.push_into_queue(yytext, 1, 1); }
 
-{DELIMITER} { printf("%c\n", DELIMITER); queue_obj.push_into_queue(DELIMITER, 1, 1); }
+{DELIMITER} { printf("%c\n", DELIMITER);   }
 
  /* ignore any kind of comments; i.e. no 'action'! */
- /* {COMMENT} { printf("%s\n", COMMENT) ; queue_obj.push_into_queue(COMMENT, 1, 1); } */
+ /* {COMMENT} { printf("%s\n", COMMENT) ;  COMMENT, 1, 1); } */
 
 %%
+
 /* ----- USER CODE PART ----- */
 /* ========================== */
-
 main(int argc, char **argv)
-//int argc;
-//char **argv;
 {
 YY_BUFFER_STATE bp;
 extern FILE* yyin;

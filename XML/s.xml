@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <s>
-	<stdarg.h replacement="">
-		<va_arg replacement="" header=""constant="true" header=""/>
-		<va_start replacement="" header=""constant="true" header=""/>
-		<va_end replacement="" header=""constant="true" header=""/>
-		<va_list replacement="" header=""constant="true" header=""/>
-	</stdarg.h> 
-	<stream.h replacement="">
-	</stream.h>
-	<stddef.h replacement="">
-		<ptrdiff_t replacement="" constant="true" header=""/>
-		<NULL replacement="" constant="true" header="">
-			<size_t replacement="" constant="true" header=""/>
-			<size_t replacement="" constant="true" header=""/>
-	</stddef.h>
-	<stdiostr.h replacement="">
-	</stdiostr.h>
-	<share.h replacement="">
-		<jmp_buf replacement="" constant="true" header="">
-	<SH_COMPAT replacement="" constant="true" header,="">
-	<SH_DENYNO replacement="" constant="true" header="">
-	<SH_DENYNONE replacement="" constant="true" header="">
-	<SH_DENYRD replacement="" constant="true" header="">
-	<SH_DENYRW replacement="" constant="true" header="">
-	<SH_DENYWR replacement="" constant="true" header="">
-	</share.h >
-	<sys\locking.h replacement="">
+	<functions>
+	<!-- <stdarg.h replacement=""> -->
+		<function name="va_arg" replacement="" header=""constant="true" header=""/>
+		<function name="va_start" replacement="" header=""constant="true" header=""/>
+		<function name="va_end" replacement="" header=""constant="true" header=""/>
+		<function name="va_list" replacement="" header=""constant="true" header=""/>
+	<!-- </stdarg.h>  -->
+	<!-- <stream.h replacement=""> -->
+	<!-- </stream.h> -->
+	<!-- <stddef.h replacement=""> -->
+		<function name="ptrdiff_t" replacement="" constant="true" header=""/>
+		<function name="NULL" replacement="" constant="true" header="">
+		<function name="size_t" replacement="" constant="true" header=""/>
+		<function name="size_t" replacement="" constant="true" header=""/>
+	<!-- </stddef.h> -->
+	<!-- <stdiostr.h replacement=""> -->
+	<!-- </stdiostr.h> -->
+	<!-- <share.h replacement=""> -->
+		<function name="jmp_buf" replacement="" constant="true" header="">
+		<function name="SH_COMPAT" replacement="" constant="true" header,="">
+		<function name="SH_DENYNO" replacement="" constant="true" header="">
+		<function name="SH_DENYNONE" replacement="" constant="true" header="">
+		<function name="SH_DENYRD" replacement="" constant="true" header="">
+		<function name="SH_DENYRW" replacement="" constant="true" header="">
+		<function name="SH_DENYWR" replacement="" constant="true" header="">
+	<!-- </share.h > -->
+	<!-- <sys\locking.h replacement=""> -->
 
-	</sys\locking.h>
-	<strstrea.h replacement="">
-	</strstrea.h>
-	</s>
+	<!-- </sys\loc<!-- </strstrea.h> -->
+	</functions>
+</s>

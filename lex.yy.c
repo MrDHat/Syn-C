@@ -698,7 +698,6 @@ char *yytext;
 /* ' The literal block %{ ... %} ' in this part is copied to verbatim to the generated
 C source file near the beginning, before the beginning of yylex() */
 #line 60 "includes/scanner/scanner.l"
-/* Included for queue operations */
 #include "queue_ops.h"
 #define PLUS "+"
 #define MINUS "-"
@@ -764,6 +763,7 @@ C source file near the beginning, before the beginning of yylex() */
 #define COMMENT 262
 
 queue_ops queue_obj;
+
 /* DEFINITIONS FOR FINITE AUTOMATA */
 /* ------------------------------- */
 /* Universal Character Name: the naming conventions for UCS defined by International Standard ISO/IEC 10646 */
@@ -1059,7 +1059,7 @@ YY_RULE_SETUP
 case 3:
 YY_RULE_SETUP
 #line 164 "includes/scanner/scanner.l"
-{ printf("%s\n", MULT); queue_obj.push_into_queue(MULT, 1, 1); }
+{ printf("%s\n", MULT);  queue_obj.push_into_queue(MULT, 1, 1); }
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
@@ -1089,7 +1089,7 @@ YY_RULE_SETUP
 case 9:
 YY_RULE_SETUP
 #line 170 "includes/scanner/scanner.l"
-{ printf("%s\n", LESSTHAN); queue_obj.push_into_queue(LESSTHAN, 1, 1); }
+{ printf("%s\n", LESSTHAN); queue_obj.push_into_queue(LESSTHAN, 1, 1);  }
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
@@ -1109,7 +1109,7 @@ YY_RULE_SETUP
 case 13:
 YY_RULE_SETUP
 #line 174 "includes/scanner/scanner.l"
-{ printf("%s\n", EQUAL); queue_obj.push_into_queue(EQUAL, 1, 1); }
+{ printf("%s\n", EQUAL);  queue_obj.push_into_queue(EQUAL, 1, 1); }
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
@@ -1169,7 +1169,7 @@ YY_RULE_SETUP
 case 25:
 YY_RULE_SETUP
 #line 186 "includes/scanner/scanner.l"
-{ printf("%s\n", SEMICOLON); queue_obj.push_into_queue(SEMICOLON, 1, 1); }
+{ printf("HELLO!!!!!! %s\n", SEMICOLON); queue_obj.push_into_queue(SEMICOLON, 1, 1); }
 	YY_BREAK
 case 26:
 YY_RULE_SETUP
@@ -1181,7 +1181,7 @@ YY_RULE_SETUP
 case 27:
 YY_RULE_SETUP
 #line 191 "includes/scanner/scanner.l"
-{ printf("%s\n", CHARSYM); queue_obj.push_into_queue(CHARSYM, 1, 1); }
+{ printf("%s\n", CHARSYM); queue_obj.push_into_queue(CHARSYM, 1, 1);  }
 	YY_BREAK
 case 28:
 YY_RULE_SETUP
@@ -1191,22 +1191,22 @@ YY_RULE_SETUP
 case 29:
 YY_RULE_SETUP
 #line 193 "includes/scanner/scanner.l"
-{ printf("%s\n", VOIDSYM); queue_obj.push_into_queue(VOIDSYM, 1, 1); }
+{ printf("%s\n", VOIDSYM);  queue_obj.push_into_queue(VOIDSYM, 1, 1); }
 	YY_BREAK
 case 30:
 YY_RULE_SETUP
 #line 194 "includes/scanner/scanner.l"
-{ printf("%s\n", IFSYM); queue_obj.push_into_queue(IFSYM, 1, 1); }
+{ printf("%s\n", IFSYM);  queue_obj.push_into_queue(IFSYM, 1, 1); }
 	YY_BREAK
 case 31:
 YY_RULE_SETUP
 #line 195 "includes/scanner/scanner.l"
-{ printf("%s\n", ELSESYM); queue_obj.push_into_queue(ELSESYM, 1, 1); }
+{ printf("%s\n", ELSESYM);  queue_obj.push_into_queue(ELSESYM, 1, 1); }
 	YY_BREAK
 case 32:
 YY_RULE_SETUP
 #line 196 "includes/scanner/scanner.l"
-{ printf("%s\n", WHILESYM); queue_obj.push_into_queue(WHILESYM, 1, 1); }
+{ printf("%s\n", WHILESYM); queue_obj.push_into_queue(WHILESYM, 1, 1);  }
 	YY_BREAK
 case 33:
 YY_RULE_SETUP
@@ -1221,12 +1221,12 @@ YY_RULE_SETUP
 case 35:
 YY_RULE_SETUP
 #line 199 "includes/scanner/scanner.l"
-{ printf("%s\n", BREAKSYM); queue_obj.push_into_queue(BREAKSYM, 1, 1); }
+{ printf("%s\n", BREAKSYM); queue_obj.push_into_queue(BREAKSYM, 1, 1);  }
 	YY_BREAK
 case 36:
 YY_RULE_SETUP
 #line 200 "includes/scanner/scanner.l"
-{ printf("%s\n", RETURNSYM); queue_obj.push_into_queue(RETURNSYM, 1, 1); }
+{ printf("%s\n", RETURNSYM); queue_obj.push_into_queue(RETURNSYM, 1, 1);  }
 	YY_BREAK
 case 37:
 YY_RULE_SETUP
@@ -1236,22 +1236,22 @@ YY_RULE_SETUP
 case 38:
 YY_RULE_SETUP
 #line 202 "includes/scanner/scanner.l"
-{ printf("%s\n", EXTERNSYM); queue_obj.push_into_queue(EXTERNSYM, 1, 1); }	
+{ printf("%s\n", EXTERNSYM); queue_obj.push_into_queue(EXTERNSYM, 1, 1);  }	
 	YY_BREAK
 case 39:
 YY_RULE_SETUP
 #line 203 "includes/scanner/scanner.l"
-{ printf("%s\n", FLOATSYM); queue_obj.push_into_queue(FLOATSYM, 1, 1); }
+{ printf("%s\n", FLOATSYM); queue_obj.push_into_queue(FLOATSYM, 1, 1);  }
 	YY_BREAK
 case 40:
 YY_RULE_SETUP
 #line 204 "includes/scanner/scanner.l"
-{ printf("%s\n", DOUBLESYM); queue_obj.push_into_queue(DOUBLESYM, 1, 1); }
+{ printf("%s\n", DOUBLESYM); queue_obj.push_into_queue(DOUBLESYM, 1, 1);  }
 	YY_BREAK
 case 41:
 YY_RULE_SETUP
 #line 205 "includes/scanner/scanner.l"
-{ printf("%s\n", SWITCHSYM); queue_obj.push_into_queue(SWITCHSYM, 1, 1); }
+{ printf("%s\n", SWITCHSYM); queue_obj.push_into_queue(SWITCHSYM, 1, 1);  }
 	YY_BREAK
 case 42:
 YY_RULE_SETUP
@@ -1276,7 +1276,7 @@ YY_RULE_SETUP
 case 46:
 YY_RULE_SETUP
 #line 210 "includes/scanner/scanner.l"
-{ printf("%s\n", REGISTERSYM); queue_obj.push_into_queue(REGISTERSYM, 1, 1); }
+{ printf("%s\n", REGISTERSYM);queue_obj.push_into_queue(REGISTERSYM, 1, 1); }
 	YY_BREAK
 case 47:
 YY_RULE_SETUP
@@ -1301,7 +1301,7 @@ YY_RULE_SETUP
 case 51:
 YY_RULE_SETUP
 #line 215 "includes/scanner/scanner.l"
-{ printf("%s\n", DOSYM); queue_obj.push_into_queue(DOSYM, 1, 1); }
+{ printf("%s\n", DOSYM); queue_obj.push_into_queue(DOSYM, 1, 1);  }
 	YY_BREAK
 case 52:
 YY_RULE_SETUP
@@ -1357,10 +1357,10 @@ case 61:
 /* rule 61 can match eol */
 YY_RULE_SETUP
 #line 232 "includes/scanner/scanner.l"
-{ printf("%c\n", DELIMITER); queue_obj.push_into_queue(DELIMITER, 1, 1); }
+{ printf("%c\n", DELIMITER);   }
 	YY_BREAK
 /* ignore any kind of comments; i.e. no 'action'! */
-/* {COMMENT} { printf("%s\n", COMMENT) ; queue_obj.push_into_queue(COMMENT, 1, 1); } */
+/* {COMMENT} { printf("%s\n", COMMENT) ;  COMMENT, 1, 1); } */
 case 62:
 YY_RULE_SETUP
 #line 237 "includes/scanner/scanner.l"
@@ -2363,12 +2363,10 @@ void yyfree (void * ptr )
 #line 237 "includes/scanner/scanner.l"
 
 
+
 /* ----- USER CODE PART ----- */
 /* ========================== */
-
 main(int argc, char **argv)
-//int argc;
-//char **argv;
 {
 YY_BUFFER_STATE bp;
 extern FILE* yyin;

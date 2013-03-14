@@ -1,32 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <p>
-	<process.h replacement="" header=""/>
-	    <abort replacement="" header=""/>
-	    <_cexit replacement="" header=""/>
-	    <_c_exit replacement="" header=""/>
-	    <execl replacement="" header=""/>
-	    <execle replacement="" header=""/>
-	    <execlp replacement="" header=""/>
-	    <execlpe replacement="" header=""/>
-	    <execv replacement="" header=""/>
-	    <execve replacement="" header=""/>
-	    <execvp replacement="" header=""/>
-	    <execvpe replacement="" header=""/>
-	    <exit replacement="" header="">
-	    <_exit replacement="" header=""/>
-	    <getpid replacement="" header=""/>
-	    <spawnl replacement="" header=""/>
-	    <spawnle replacement="" header=""/>
-	    <spawnlp replacement="" header=""/>
-	    <spawnlpe replacement="" header=""/>
-	    <spawnv replacement="" header=""/>
-	    <spawnve replacement="" header=""/>
-	    <spawnvp replacement="" header=""/>
-	    <spawnvpe replacement="" header=""/>
-	    <system replacement="" header=""/>	    
-	    <P_NOWAIT replacement="" constant="true" header=""/>
-	    <P_OVERLAY replacement="" constant="true" header=""/>
-	    <P_WAIT replacement="" constant="true" header=""/>
-	    <_psp replacement="" constant="true" header=""/>
-	</process.h>
+	<functions>
+	<!-- <process.h replacement="" header=""/> -->
+	    <function name="abort" replacement="" header=""/>
+	    <function name="_cexit" replacement="" header=""/>
+	    <function name="_c_exit" replacement="" header=""/>
+	    <function name="execl" replacement="" header=""/>
+	    <function name="execle" replacement="" header=""/>
+	    <function name="execlp" replacement="" header=""/>
+	    <function name="execlpe" replacement="" header=""/>
+	    <function name="execv" replacement="" header=""/>
+	    <function name="execve" replacement="" header=""/>
+	    <function name="execvp" replacement="" header=""/>
+	    <function name="execvpe" replacement="" header=""/>
+	    <function name="exit" replacement="" header="">
+	    <function name="_exit" replacement="" header=""/>
+	    <function name="getpid" replacement="" header=""/>
+	    <function name="spawnl" replacement="" header=""/>
+	    <function name="spawnle" replacement="" header=""/>
+	    <function name="spawnlp" replacement="" header=""/>
+	    <function name="spawnlpe" replacement="" header=""/>
+	    <function name="spawnv" replacement="" header=""/>
+	    <function name="spawnve" replacement="" header=""/>
+	    <function name="spawnvp" replacement="" header=""/>
+	    <function name="spawnvpe" replacement="" header=""/>
+	    <function name="system" replacement="" header=""/>	    
+	    <function name="P_NOWAIT" replacement="" constant="true" header=""/>
+	    <function name="P_OVERLAY" replacement="" constant="true" header=""/>
+	    <function name="P_WAIT" replacement="" constant="true" header=""/>
+	    <function name="_psp" replacement="" constant="true" header=""/>
+	<!-- </process.h> -->
+	</functions>
 </p>
