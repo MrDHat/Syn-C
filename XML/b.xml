@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <b>
-	<!-- <bcd.h replacement="">  -->
 	<functions>
 		<function name="abs" replacement="" header=""/>
 		<function name="acos" replacement="" header=""/>
@@ -19,8 +17,6 @@
 		<function name="sqrt" replacement="" header=""/>
 		<function name="tan" replacement="" header=""/>
 		<function name="tanh" replacement="" header=""/>
-	<!-- </bcd.h> -->
-	<!-- <bios.h replacement=""> -->
 		<function name="_bios_disk" replacement="" header=""/>
 		<function name="_bios_equip" replacement="" header=""/>
 		<function name="_bios_keybrd" replacement="" header=""/>
@@ -35,6 +31,5 @@
 		<function name="biosmemory" replacement="" header=""/>
 		<function name="biosprint" replacement="" header=""/>
 		<function name="biostime" replacement="" header=""/>
-	<!-- </bios.h> -->
-	</functons>
+	</functions>
 </b>

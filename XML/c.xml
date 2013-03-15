@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <c>
-</functions>
-	<!-- <conio.h replacement=""> -->
+	<functions>
 		<function name="cgets" replacement="" header=""/>
 		<function name="clreol" replacement="" header=""/>
 		<function name="clrscr" replacement="" header=""/>
@@ -40,6 +38,5 @@
 		<function name="wherex" replacement="" header=""/>
 		<function name="wherey" replacement="" header=""/>
 		<function name="window" replacement="" header=""/>
-	<!-- </conio.h> -->
-</functions>
+	</functions>
 </c>

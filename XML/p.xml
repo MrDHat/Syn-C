@@ -1,34 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <p>
 	<functions>
-	<!-- <process.h replacement="" header=""/> -->
-	    <function name="abort" replacement="" header=""/>
-	    <function name="_cexit" replacement="" header=""/>
-	    <function name="_c_exit" replacement="" header=""/>
-	    <function name="execl" replacement="" header=""/>
-	    <function name="execle" replacement="" header=""/>
-	    <function name="execlp" replacement="" header=""/>
-	    <function name="execlpe" replacement="" header=""/>
-	    <function name="execv" replacement="" header=""/>
-	    <function name="execve" replacement="" header=""/>
-	    <function name="execvp" replacement="" header=""/>
-	    <function name="execvpe" replacement="" header=""/>
-	    <function name="exit" replacement="" header="">
-	    <function name="_exit" replacement="" header=""/>
-	    <function name="getpid" replacement="" header=""/>
-	    <function name="spawnl" replacement="" header=""/>
-	    <function name="spawnle" replacement="" header=""/>
-	    <function name="spawnlp" replacement="" header=""/>
-	    <function name="spawnlpe" replacement="" header=""/>
-	    <function name="spawnv" replacement="" header=""/>
-	    <function name="spawnve" replacement="" header=""/>
-	    <function name="spawnvp" replacement="" header=""/>
-	    <function name="spawnvpe" replacement="" header=""/>
-	    <function name="system" replacement="" header=""/>	    
-	    <function name="P_NOWAIT" replacement="" constant="true" header=""/>
-	    <function name="P_OVERLAY" replacement="" constant="true" header=""/>
-	    <function name="P_WAIT" replacement="" constant="true" header=""/>
-	    <function name="_psp" replacement="" constant="true" header=""/>
-	<!-- </process.h> -->
+		<function name="abort" header="" replacement=""/>
+		<function name="_cexit" header="" replacement=""/>
+		<function name="_c_exit" header="" replacement=""/>
+		<function name="execl" header="" replacement=""/>
+		<function name="execle" header="" replacement=""/>
+		<function name="execlp" header="" replacement=""/>
+		<function name="execlpe" header="" replacement=""/>
+		<function name="execv" header="" replacement=""/>
+		<function name="execve" header="" replacement=""/>
+		<function name="execvp" header="" replacement=""/>
+		<function name="execvpe" header="" replacement=""/>
+		<function name="exit" header="" replacement=""/>
+		<function name="_exit" header="" replacement=""/>
+		<function name="getpid" header="" replacement=""/>
+		<function name="spawnl" header="" replacement=""/>
+		<function name="spawnle" header="" replacement=""/>
+		<function name="spawnlp" header="" replacement=""/>
+		<function name="spawnlpe" header="" replacement=""/>
+		<function name="spawnv" header="" replacement=""/>
+		<function name="spawnve" header="" replacement=""/>
+		<function name="spawnvp" header="" replacement=""/>
+		<function name="spawnvpe" header="" replacement=""/>
+		<function name="system" header="" replacement=""/>	
+		<function name="P_NOWAIT" header="" replacement="" constant="true"/>
+		<function name="P_OVERLAY" header="" replacement="" constant="true"/>
+		<function name="P_WAIT" header="" replacement="" constant="true"/>
+		<function name="_psp" header="" replacement="" constant="true"/>
 	</functions>
 </p>

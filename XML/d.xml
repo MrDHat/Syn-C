@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <d>
 	<functions>
-	<!-- <dir.h replacement=""> -->
 		<function name="chdir" replacement="" header=""/>
 		<function name="findfirst" replacement="" header=""/>
 		<function name="findnext" replacement="" header=""/>
@@ -25,8 +23,6 @@
 		<function name="FILENAME" replacement="" constant="true" header=""/>
 		<function name="MAXFILE" replacement="" constant="true" header=""/>
 		<function name="MAXPATH" replacement="" constant="true" header=""/>
-	<!--  </dir.h> -->
-	<!--  <dos.h replacement=""> -->
 		<function name="absread" replacement="" header=""/>
 		<function name="abswrite" replacement="" header=""/>
 		<function name="allocmem" replacement="" header=""/>
@@ -61,7 +57,7 @@
 		<function name="_dos_setfileattr" replacement="" header=""/>
 		<function name="_dos_setftime" replacement="" header=""/>
 		<function name="_dos_settime" replacement="" header=""/>
-		<_function name="_dos_setvect" replacement="" header=""/>
+		<function name="_dos_setvect" replacement="" header=""/>
 		<function name="dostounix" replacement="" header=""/>
 		<function name="_dos_write" replacement="" header=""/>
 		<function name="_emit_" replacement="" header=""/>
@@ -87,7 +83,7 @@
 		<function name="_hardresume" replacement="" header=""/>
 		<function name="hardresume" replacement="" header=""/>
 		<function name="_hardretn" replacement="" header=""/>
-		<function name="hardret"n replacement="" header=""/>
+		<function name="hardretn" replacement="" header=""/>
 		<function name="inp" replacement="" header=""/>
 		<function name="inport" replacement="" header=""/>
 		<function name="inportb" replacement="" header=""/>
@@ -159,7 +155,5 @@
 		<function name="_version" replacement="" constant="true" header=""/>
 		<function name="WORDREGS" replacement="" constant="true" header=""/>
 		<function name="xfcb" replacement="" constant="true" header=""/>
-
-	<!--  </dos.h> -->
 	</functions>
 </d>

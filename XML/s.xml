@@ -1,33 +1,19 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <s>
 	<functions>
-	<!-- <stdarg.h replacement=""> -->
-		<function name="va_arg" replacement="" header=""constant="true" header=""/>
-		<function name="va_start" replacement="" header=""constant="true" header=""/>
-		<function name="va_end" replacement="" header=""constant="true" header=""/>
-		<function name="va_list" replacement="" header=""constant="true" header=""/>
-	<!-- </stdarg.h>  -->
-	<!-- <stream.h replacement=""> -->
-	<!-- </stream.h> -->
-	<!-- <stddef.h replacement=""> -->
+		<function name="va_arg" replacement="abc" header="abc" constant="true"/>
+		<function name="va_start" replacement="abc" header="abc" constant="true"/>
+		<function name="va_end" replacement="abc" header="abc" constant="true"/>
+		<function name="va_list" replacement="abc" header="abc" constant="true"/>
 		<function name="ptrdiff_t" replacement="" constant="true" header=""/>
-		<function name="NULL" replacement="" constant="true" header="">
+		<function name="NULL" replacement="" constant="true" header=""/>
 		<function name="size_t" replacement="" constant="true" header=""/>
 		<function name="size_t" replacement="" constant="true" header=""/>
-	<!-- </stddef.h> -->
-	<!-- <stdiostr.h replacement=""> -->
-	<!-- </stdiostr.h> -->
-	<!-- <share.h replacement=""> -->
-		<function name="jmp_buf" replacement="" constant="true" header="">
-		<function name="SH_COMPAT" replacement="" constant="true" header,="">
-		<function name="SH_DENYNO" replacement="" constant="true" header="">
-		<function name="SH_DENYNONE" replacement="" constant="true" header="">
-		<function name="SH_DENYRD" replacement="" constant="true" header="">
-		<function name="SH_DENYRW" replacement="" constant="true" header="">
-		<function name="SH_DENYWR" replacement="" constant="true" header="">
-	<!-- </share.h > -->
-	<!-- <sys\locking.h replacement=""> -->
-
-	<!-- </sys\loc<!-- </strstrea.h> -->
+		<function name="jmp_buf" replacement="" constant="true" header=""/>
+		<function name="SH_COMPAT" replacement="" constant="true" header=""/>
+		<function name="SH_DENYNO" replacement="" constant="true" header=""/>
+		<function name="SH_DENYNONE" replacement="" constant="true" header=""/>
+		<function name="SH_DENYRD" replacement="" constant="true" header=""/>
+		<function name="SH_DENYRW" replacement="" constant="true" header=""/>
+		<function name="SH_DENYWR" replacement="" constant="true" header=""/>
 	</functions>
 </s>

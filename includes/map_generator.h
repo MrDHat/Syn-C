@@ -50,7 +50,7 @@ class parser {
 		parser();
 		int create_function_map(string key, string value);
 		int xml_reader();
-
+		string map_find(string key);
 };
 
 #endif

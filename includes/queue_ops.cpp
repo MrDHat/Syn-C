@@ -16,55 +16,45 @@
 */
 
 #include "queue_ops.h"
+#include <stdio.h>
+
 
 using namespace std;
 
 queue_ops::queue_ops(){
-
+    parser_obj.xml_reader();
 }
 
 queue_ops::~queue_ops(){
 
 }
 
-void queue_ops::push_into_queue(string entry, int identifier, int direct_flag){
-    //Identifier determines the type of queue, 1=> Input Queue | 2=> Output Queue
+void queue_ops::push_into_queue(string entry, int direct_flag){
     //For direct_flag, if=1 => to be inserted directly into the output_queue | if=2 => value to be looked up in hash map | if=3 => A header file
-
+    string map_value;
+    //printf("Hello") ;
     if(direct_flag == 1){
-        if(identifier == 1){
-            input_queue.push(entry);
-        }
-
-        else if(identifier == 2){
-            output_queue.push(entry);        
-        }
+        input_queue.push(entry);
     }
     else if (direct_flag == 2)  //=> An identifier which cannot be stored directly
     {
-        if (identifier == 1)
-        {
-            //Check for value in hash map
-        }
+        //Check for value in hash map
+        map_value= parser_obj.map_find(entry);
+        if(map_value!="no")
+            input_queue.push(map_value);
+        else
+            input_queue.push(entry);
     }
     else if (direct_flag == 3)  //=> A header file
     {
-        if (identifier == 1)
-        {
-            // Code for tackling header file 
-        }
+            input_queue.push(entry);
     }
-}
+    while(!input_queue.empty())
+        printf("%s\n", pop_from_queue().c_str());
+ }
 
-string queue_ops::pop_from_queue(int identifier){
-
-    if(identifier == 1){
-        input_queue.pop();
-        popped_str = input_queue.front();
-    }
-    else if(identifier == 2){
-        output_queue.pop();
-        popped_str = output_queue.front();
-    }
+string queue_ops::pop_from_queue(){
+    popped_str = input_queue.front();
+    input_queue.pop();
     return popped_str;
 }

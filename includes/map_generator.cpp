@@ -18,10 +18,9 @@
 
 
 #include "map_generator.h"
+#include <stdio.h>
 
 using namespace std;
-
-const string xml_path("../XML/");
 
 parser::parser() {
 
@@ -29,17 +28,20 @@ parser::parser() {
 
 int parser::xml_reader() {
 	char header_it;
+	string header_it_str;
 	string header, replacement, function_name, value;
-	string src("");
+	string src;
 	for(header_it= 'a' ; header_it<= 'z' ; header_it++) {
-		src+= xml_path;
+		src = "XML/";
 		src+= header_it;
 		src+= ".xml";
 		xml_result= xml_header_file.load_file(src.c_str());
+		printf("%s\n%s\n",src.c_str(),xml_result.description());
 		if(xml_result){
-			xml_tool= xml_header_file.child("a").child("functions");
+			header_it_str= header_it;
+			xml_tool= xml_header_file.child(header_it_str.c_str()).child("functions");
 			for(child_tool= xml_tool.child("function"); child_tool; child_tool = child_tool.next_sibling("function")){
-				
+				value=""; // Reinitialize value
 				function_name = child_tool.attribute("name").value();
 				replacement = child_tool.attribute("replacement").value();
 				header = child_tool.attribute("header").value();
@@ -49,13 +51,26 @@ int parser::xml_reader() {
 				cout << "header " << header << "\n";
 				cout << "Value " << value << "\n";*/
 				create_function_map(function_name, value);
-				value=""; // Reinitialize value
+				printf("%s\n",value.c_str());
 			}
 		}
 	}
+	function_map["conio"]= "fuck off";
 
 }
 
 int parser::create_function_map(string key, string value) {
 	function_map[key] = value ;
+	printf("%s\n",function_map[key].c_str());
+}
+
+string parser::map_find(string key){
+	string value("no");
+	try{
+		value= function_map.at(key);
+		return value;
+	}
+	catch(...){
+		return value;
+	}
 }

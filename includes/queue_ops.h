@@ -25,6 +25,7 @@ Contains Queue functions
 
 #include <queue>
 #include <string>
+#include "map_generator.h"
 
 using namespace std;
 
@@ -33,12 +34,14 @@ class queue_ops
     private:
         queue<string> input_queue, output_queue;
         string popped_str;
+        parser parser_obj;
+        
     public:
         queue_ops();
         ~queue_ops();
-        void push_into_queue(string entry, int identifier, int direct_flag);  //Identifier determines the type of queue, 1=> Input Queue | 2=> Output Queue
+        void push_into_queue(string entry, int direct_flag); 
         //For direct_flag, if=1 => to be inserted directly into the output_queue | if=2 => value to be looked up in hash map | if=3 => A header file
-        string pop_from_queue(int identifier);
+        string pop_from_queue();
 };
 
 #endif
