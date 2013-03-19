@@ -1,22 +1,22 @@
 <b>
 	<functions>
-		<function name="abs" replacement="" header=""/>
-		<function name="acos" replacement="" header=""/>
-		<function name="asin" replacement="" header=""/>
-		<function name="atan" replacement="" header=""/>
-		<function name="cos" replacement="" header=""/>
-		<function name="cosh" replacement="" header=""/>
-		<function name="exp" replacement="" header=""/>
-		<function name="log" replacement="" header=""/>
-		<function name="log10" replacement="" header=""/>
-		<function name="pow" replacement="" header=""/>
+		<function name="abs" replacement="abs" header="stdlib"/>
+		<function name="acos" replacement="acos" header="math"/>
+		<function name="asin" replacement="asin" header="math"/>
+		<function name="atan" replacement="atan" header="math"/>
+		<function name="cos" replacement="cos" header= "math"/>
+		<function name="cosh" replacement="cosh" header="math"/>
+		<function name="exp" replacement="exp" header= "math"/>
+		<function name="log" replacement="log" header= "math"/>
+		<function name="log10" replacement="log10" header="math"/>
+		<function name="pow" replacement="pow" header= "math"/>
 		<function name="pow10" replacement="" header=""/>
 		<function name="real" replacement="" header=""/>
-		<function name="sin" replacement="" header=""/>
-		<function name="sinh" replacement="" header=""/>
-		<function name="sqrt" replacement="" header=""/>
-		<function name="tan" replacement="" header=""/>
-		<function name="tanh" replacement="" header=""/>
+		<function name="sin" replacement="sin" header= "math"/>
+		<function name="sinh" replacement="sinh" header="math"/>
+		<function name="sqrt" replacement="sqrt" header="math"/>
+		<function name="tan" replacement="tan" header= "math"/>
+		<function name="tanh" replacement="tanh" header="math"/>
 		<function name="_bios_disk" replacement="" header=""/>
 		<function name="_bios_equip" replacement="" header=""/>
 		<function name="_bios_keybrd" replacement="" header=""/>

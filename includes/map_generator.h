@@ -12,7 +12,7 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with Weka Grain.  If not, see <http://www.gnu.org/licenses/>.
+    along with Syn-C.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 
@@ -36,6 +36,7 @@ class parser {
 	private:
 		
 		string_map function_map;	// Data Structure to store the hash map
+		string_map header_map;		// Data Structure to store the ANSI Header Files.
 
 		//Pugi XML variables
 		xml_document xml_header_file;
@@ -48,9 +49,10 @@ class parser {
 	public:
 
 		parser();
-		int create_function_map(string key, string value);
+		void create_function_map(string key, string value);
+		void create_header_map();
 		int xml_reader();
-		string map_find(string key);
+		string map_find(string key, char type);
 };
 
 #endif

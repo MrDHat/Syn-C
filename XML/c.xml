@@ -2,7 +2,7 @@
 	<functions>
 		<function name="cgets" replacement="" header=""/>
 		<function name="clreol" replacement="" header=""/>
-		<function name="clrscr" replacement="" header=""/>
+		<function name="clrscr" replacement="function" header="file"/>
 		<function name="cprintf" replacement="" header=""/>
 		<function name="cputs" replacement="" header=""/>
 		<function name="cscanf" replacement="" header=""/>

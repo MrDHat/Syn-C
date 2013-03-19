@@ -13,7 +13,7 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with Weka Grain.  If not, see <http://www.gnu.org/licenses/>.
+    along with Syn-C.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 
@@ -23,7 +23,7 @@
 using namespace std;
 
 parser::parser() {
-
+	create_header_map();
 }
 
 int parser::xml_reader() {
@@ -36,7 +36,6 @@ int parser::xml_reader() {
 		src+= header_it;
 		src+= ".xml";
 		xml_result= xml_header_file.load_file(src.c_str());
-		printf("%s\n%s\n",src.c_str(),xml_result.description());
 		if(xml_result){
 			header_it_str= header_it;
 			xml_tool= xml_header_file.child(header_it_str.c_str()).child("functions");
@@ -45,32 +44,59 @@ int parser::xml_reader() {
 				function_name = child_tool.attribute("name").value();
 				replacement = child_tool.attribute("replacement").value();
 				header = child_tool.attribute("header").value();
-				value+= replacement + ";" + header; 
-				/*cout << "Name " << function_name << "\n";
-				cout << "rep " << replacement << "\n";
-				cout << "header " << header << "\n";
-				cout << "Value " << value << "\n";*/
+				value+= replacement + ";" + header + ";"; 
 				create_function_map(function_name, value);
-				printf("%s\n",value.c_str());
 			}
 		}
 	}
-	function_map["conio"]= "fuck off";
-
 }
 
-int parser::create_function_map(string key, string value) {
+void parser::create_function_map(string key, string value) {
 	function_map[key] = value ;
-	printf("%s\n",function_map[key].c_str());
 }
 
-string parser::map_find(string key){
+void parser::create_header_map() {
+	header_map["assert"]= "true";
+	header_map["complex"]= "true";
+	header_map["ctype"]= "true";
+	header_map["errno"]= "true";
+	header_map["fenv"]= "true";
+	header_map["float"]= "true";
+	header_map["inttypes"]= "true";
+	header_map["iso646"]= "true";
+	header_map["limits"]= "true";
+	header_map["locale"]= "true";
+	header_map["math"]= "true";
+	header_map["setjmp"]= "true";
+	header_map["signal"]= "true";
+	header_map["stdarg"]= "true";
+	header_map["stdbool"]= "true";
+	header_map["stdint"]= "true";
+	header_map["stddef"]= "true";
+	header_map["stdio"]= "true";
+	header_map["stdlib"]= "true";
+	header_map["string"]= "true";
+	header_map["tgmath"]= "true";
+	header_map["wchar"]= "true";
+	header_map["wctype"]= "true";
+}
+
+/*Search for a key in the map. If type='f', search in function_map, else if type='h', search in header_map*/
+string parser::map_find(string key, char type){
 	string value("no");
 	try{
-		value= function_map.at(key);
-		return value;
+		if(type== 'f'){
+			value= function_map.at(key);
+			return value;
+		}
+
+		else if(type== 'h'){
+			value= header_map.at(key);
+			return value;
+		}
 	}
+	
 	catch(...){
-		return value;
+			return value;
 	}
 }

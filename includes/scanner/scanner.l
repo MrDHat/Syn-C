@@ -122,11 +122,16 @@ C source file near the beginning, before the beginning of yylex() */
 #define COMMENT 262
 
 queue_ops queue_obj;
+int queue_ops::count= 0;
 
 %}
 
 /* DEFINITIONS FOR FINITE AUTOMATA */
 /* ------------------------------- */
+
+HEADER "#include <"[a-z]+".h>"
+
+DOTHASH [\.#]
 
 /* Universal Character Name: the naming conventions for UCS defined by International Standard ISO/IEC 10646 */
 UCN (\\u[0-9a-fA-F]{4}|\\U[0-9a-fA-F]{8})
@@ -151,14 +156,6 @@ STRING L?\"([^"\\]|\\['"?\\abfnrtv]|\\[0-7]{1,3}|\\[Xx][0-9a-fA-F]+|{UCN})*\"
 
 /* COMMENT: any c style comment */
 COMMENT ("/*"([^*]|[\r\n]|(\*+([^*/]|[\r\n])))*"*"+"/")|("//".*)
-
-/* header file of type <header.h> */
-HEADER_ANG #include[ ]*<[a-z/]*>
-
-/* header file of type "header.h" */
-HEADER_QUOTE #include[ ]*\"[a-z/]*\"
-
-
 
 %%
  /* ----- RULES PART ----- */
@@ -283,19 +280,13 @@ HEADER_QUOTE #include[ ]*\"[a-z/]*\"
 	  queue_obj.push_into_queue(SIZEOFSYM, 1); }
 "typedef" { // printf("%s\n", TYPEDEFSYM);
 	  queue_obj.push_into_queue(TYPEDEFSYM, 1); }
-	  
-
- 			
-{HEADER_ANG} {
-	queue_obj.push_into_queue(yytext, 3);
-}
-
-{HEADER_QUOTE} {
-	queue_obj.push_into_queue(yytext, 3);
-}
 
  /* RULES FOR IDENTIFIIERS */
  /* ---------------------- */
+
+{HEADER} { queue_obj.push_into_queue(yytext,3); }
+ 
+{DOTHASH} { queue_obj.push_into_queue(yytext,1); }
 {IDENTIFIER} { // printf("%s\n", yytext); 
 	  queue_obj.push_into_queue(yytext, 2); }
 
@@ -324,11 +315,12 @@ YY_BUFFER_STATE bp;
 extern FILE* yyin;
 
 if (argc>1) {
-yyin = fopen(argv[1],"r");
+yyin = fopen(argv[2],"r");
 } else {
 yyin = stdin;
 bp = yy_create_buffer(yyin, YY_BUF_SIZE); // YY_BUF_SIZE defined by flex, typically 16K=16384
 yy_switch_to_buffer(bp); // tell it to use the buffer we just made
 }
 yylex();
+queue_obj.generate_output_file(argv[1]);
 }

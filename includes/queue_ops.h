@@ -12,7 +12,7 @@
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with Weka Grain.  If not, see <http://www.gnu.org/licenses/>.
+    along with Syn-C.  If not, see <http://www.gnu.org/licenses/>.
 */
 
 
@@ -25,6 +25,7 @@ Contains Queue functions
 
 #include <queue>
 #include <string>
+#include <cstring>
 #include "map_generator.h"
 
 using namespace std;
@@ -35,13 +36,17 @@ class queue_ops
         queue<string> input_queue, output_queue;
         string popped_str;
         parser parser_obj;
-        
-    public:
+        FILE *output_file;
+        string header_array[200];
+    
+     public:
+        static int count;
         queue_ops();
         ~queue_ops();
         void push_into_queue(string entry, int direct_flag); 
         //For direct_flag, if=1 => to be inserted directly into the output_queue | if=2 => value to be looked up in hash map | if=3 => A header file
         string pop_from_queue();
+        void generate_output_file(string path);
 };
 
 #endif
