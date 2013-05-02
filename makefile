@@ -2,6 +2,7 @@ all: UI
 	
 UI: flex
 	javac MainUI.java
+	jar cvfm SynC_UI.jar MANIFEST.MF MainUI.class
 
 flex: queue
 	flex includes/scanner/scanner.l
