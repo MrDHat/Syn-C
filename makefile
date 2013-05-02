@@ -1,5 +1,7 @@
-all: flex
+all: UI
 	
+UI: flex
+	javac MainUI.java
 
 flex: queue
 	flex includes/scanner/scanner.l
