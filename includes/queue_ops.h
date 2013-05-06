@@ -46,7 +46,7 @@ class queue_ops
         void push_into_queue(string entry, int direct_flag); 
         //For direct_flag, if=1 => to be inserted directly into the output_queue | if=2 => value to be looked up in hash map | if=3 => A header file
         string pop_from_queue();
-        void generate_output_file(string path);
+        int generate_output_file(string path, string file);
 };
 
 #endif

@@ -78,13 +78,13 @@ string queue_ops::pop_from_queue(){
     return popped_str;
 }
 
-void queue_ops::generate_output_file(string path) {
+int queue_ops::generate_output_file(string path, string file) {
     string file_path(path), check_str ;
     int len;
-    file_path+= "output.c";
-    output_file= fopen("output.c", "w");
+    file_path+= "sync_"+file;
+    output_file= fopen(file_path.c_str(), "w");
     if(!output_file)
-        return;
+        return -1;
     for(int i=0;i<count;i++) {
         string include_name("");
         include_name+= "#include <";
@@ -98,4 +98,5 @@ void queue_ops::generate_output_file(string path) {
         fputs(check_str.c_str(), output_file);
     }
     fclose(output_file);
+    return 0 ;
 }

@@ -322,5 +322,5 @@ bp = yy_create_buffer(yyin, YY_BUF_SIZE); // YY_BUF_SIZE defined by flex, typica
 yy_switch_to_buffer(bp); // tell it to use the buffer we just made
 }
 yylex();
-queue_obj.generate_output_file(argv[1]);
+queue_obj.generate_output_file(argv[1], argv[2]);
 }

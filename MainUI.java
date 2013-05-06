@@ -132,13 +132,23 @@ public class MainUI extends JFrame implements ActionListener {
 				param = "./flex_output " + dir + " " + file ;
 				try{
 				Process p = Runtime.getRuntime().exec(param) ;
+				int res = 1 ;
+				while(res != 0) {
+					try{
+						res = p.waitFor() ;
+						if(res == -1)
+							return ;
+					}
+					catch(Exception e){System.out.println("Error!!") ;}
 				}
-				catch (IOException e) {System.out.println(" procccess not read"+e);}
-				try {
-					FileReader reader = new FileReader("output.c") ; 
-					BufferedReader br = new BufferedReader(reader) ;
-					codeArea.read(br, null) ;
-					br.close() ;
+			}
+			catch (IOException e) {System.out.println(" procccess not read"+e);}
+			System.out.println(dir) ;
+			try {
+				FileReader reader = new FileReader(dir+"sync_"+file) ; 
+				BufferedReader br = new BufferedReader(reader) ;
+				codeArea.read(br, null) ;
+				br.close() ;
 			}
 			catch(Exception e) {
 				System.out.println(e) ;
@@ -148,7 +158,6 @@ public class MainUI extends JFrame implements ActionListener {
 
 		else {
 
-			boolean run = true ;
 			consoleArea.setText("") ;
 
 			// COMPILE
@@ -180,8 +189,6 @@ public class MainUI extends JFrame implements ActionListener {
 			    }
 			    bre.close();
 			    p.waitFor();
-			    if(consoleArea.getLineCount() != 0)
-			    	run = false ;
 			}
 			catch (Exception err) {
 			    consoleArea.append(err.toString()) ;
