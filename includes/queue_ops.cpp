@@ -33,10 +33,8 @@ void queue_ops::push_into_queue(string entry, int direct_flag){
     //For direct_flag, if=1 => to be inserted directly into the output_queue | if=2 => value to be looked up in hash map | if=3 => A header file
     string map_value, rep_ret_s, header_ret_s;
     char *rep_ret, *header_ret, *line;
-
-    // if(entry=="#" || entry=="include") {
-    //     return;
-    // }
+    int i;
+    bool header_ret_flag;
        
     if(direct_flag == 1){
         input_queue.push(entry);
@@ -46,6 +44,7 @@ void queue_ops::push_into_queue(string entry, int direct_flag){
         //Check for value in header hash map
         map_value= parser_obj.map_find(entry, 'f');
         if(map_value!="no"){
+            header_ret_flag = 1;            
             line = new char [map_value.size() + 1] ;
             strcpy(line, map_value.c_str()) ;
             rep_ret= strtok(line, ";");
@@ -53,7 +52,17 @@ void queue_ops::push_into_queue(string entry, int direct_flag){
             rep_ret_s = string(rep_ret);
             header_ret_s = string(header_ret);
             input_queue.push(rep_ret_s);
-            header_array[count++]= header_ret_s;
+            
+            //Look if the header file already exists in the array.
+            for (i = 0; i < count; ++i){
+               if(header_array[i] == header_ret_s){
+                    header_ret_flag = 0;
+                    break;
+               }
+            }
+            if(header_ret_flag == 1){
+                header_array[count++]= header_ret_s;
+            }
         }
             else
                 input_queue.push(entry);

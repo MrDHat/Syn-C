@@ -36,7 +36,7 @@ class queue_ops
         queue<string> input_queue, output_queue;
         string popped_str;
         parser parser_obj;
-        FILE *output_file;
+        FILE *output_file, *log_file;
         string header_array[200];
     
      public:
