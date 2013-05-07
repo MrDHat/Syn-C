@@ -21,12 +21,17 @@
 
 using namespace std;
 
+
 queue_ops::queue_ops(){
+    //Open log file for reading
+    log_file = fopen("log.txt", "w+");
+    fprintf(log_file, "Log file for ANSI C file produced by Syn-C\n");
+
     parser_obj.xml_reader();
 }
 
 queue_ops::~queue_ops(){
-
+    fclose(log_file);
 }
 
 void queue_ops::push_into_queue(string entry, int direct_flag){
@@ -38,6 +43,7 @@ void queue_ops::push_into_queue(string entry, int direct_flag){
        
     if(direct_flag == 1){
         input_queue.push(entry);
+
     }
     else if (direct_flag == 2)  //=> An identifier which cannot be stored directly
     {
@@ -52,6 +58,7 @@ void queue_ops::push_into_queue(string entry, int direct_flag){
             rep_ret_s = string(rep_ret);
             header_ret_s = string(header_ret);
             input_queue.push(rep_ret_s);
+            fprintf(log_file, "Replacing %s by %s\n", entry.c_str(), rep_ret_s.c_str());
             
             //Look if the header file already exists in the array.
             for (i = 0; i < count; ++i){
@@ -100,6 +107,7 @@ int queue_ops::generate_output_file(string path, string file) {
         include_name+= header_array[i];
         include_name+= ".h>\n";
         fputs(include_name.c_str(), output_file);
+        fprintf(log_file, "Including %s", include_name.c_str());
     }
     while(!input_queue.empty()) {
         check_str= pop_from_queue();
