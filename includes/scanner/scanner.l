@@ -58,6 +58,8 @@
 C source file near the beginning, before the beginning of yylex() */
 %{
 #include "queue_ops.h"
+#include<string.h>
+#include<stdlib.h>
 #define PLUS "+"
 #define MINUS "-"
 #define MULT "*"
@@ -315,7 +317,10 @@ YY_BUFFER_STATE bp;
 extern FILE* yyin;
 
 if (argc>1) {
-yyin = fopen(argv[2],"r");
+char *file = (char *)malloc(200);
+strcpy(file,argv[1]);
+strcat(file,argv[2]);
+yyin = fopen(file,"r");
 } else {
 yyin = stdin;
 bp = yy_create_buffer(yyin, YY_BUF_SIZE); // YY_BUF_SIZE defined by flex, typically 16K=16384

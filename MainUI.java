@@ -174,6 +174,7 @@ public class MainUI extends JFrame implements ActionListener {
 				try{
 				Process p = Runtime.getRuntime().exec(param) ;
 				int res = 1 ;
+				System.out.println(dir) ;
 				while(res != 0) {
 					try{
 						res = p.waitFor() ;
@@ -184,7 +185,7 @@ public class MainUI extends JFrame implements ActionListener {
 				}
 			}
 			catch (IOException e) {System.out.println(" procccess not read"+e);}
-			System.out.println(dir) ;
+			
 			try {
 				FileReader reader = new FileReader(dir+"sync_"+file) ;
 				BufferedReader br = new BufferedReader(reader) ;

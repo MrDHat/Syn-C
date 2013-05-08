@@ -3,7 +3,7 @@ all: UI
 UI: flex
 	@echo -e "\033[1m\033[31m\nGenerating UI JAR File...\033[0m"
 	javac MainUI.java
-	jar cvfm SynC_UI.jar MANIFEST.MF MainUI.class
+	jar cvfm SynC.jar MANIFEST.MF MainUI.class
 
 flex: queue
 	@echo -e "\033[1m\033[31m\nGenerating Flex File...\033[0m"
