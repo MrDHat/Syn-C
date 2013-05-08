@@ -10,10 +10,10 @@ public class MainUI extends JFrame implements ActionListener {
 	private JButton browseBtn;
 	private JButton convertBtn;
 	private JButton compileBtn;
-	private JTabbedPane TP;
-	private JPanel consolePanel;
-	private JTextArea consoleArea;
-	private JScrollPane scrollPane2, scrollPane3;
+	private JTabbedPane TP, LP;
+	private JPanel consolePanel, logPanel;
+	private JTextArea consoleArea, logArea;
+	private JScrollPane scrollPane2, scrollPane3, scrollPane4;
 	MainUI() {
 
 		scrollPane1 = new JScrollPane();
@@ -22,9 +22,13 @@ public class MainUI extends JFrame implements ActionListener {
 		convertBtn = new JButton();
 		compileBtn = new JButton();
 		TP = new JTabbedPane();
+		LP = new JTabbedPane();
 		consolePanel = new JPanel();
 		scrollPane3 = new JScrollPane();
 		consoleArea = new JTextArea();
+		logPanel = new JPanel();
+		scrollPane4 = new JScrollPane();
+		logArea = new JTextArea();
 
 		//======== this ========
 		setResizable(false);
@@ -91,6 +95,43 @@ public class MainUI extends JFrame implements ActionListener {
 			TP.addTab("Console", consolePanel);
 
 		}
+		// contentPane.add(TP);
+		// TP.setBounds(15, 475, 795, 130);
+
+		//======== LP ========
+		{
+
+			//======== logPanel ========
+			{
+				logPanel.setMinimumSize(new Dimension(900, 85));
+				logPanel.setPreferredSize(new Dimension(900, 85));
+
+				logPanel.setLayout(null);
+
+				//======== scrollPane4 ========
+				{
+					scrollPane4.setViewportView(logArea);
+				}
+				logPanel.add(scrollPane4);
+				scrollPane4.setBounds(0, 0, 850, 80);
+
+				{ // compute preferred size
+					Dimension preferredSize = new Dimension();
+					for(int i = 0; i < logPanel.getComponentCount(); i++) {
+						Rectangle bounds = logPanel.getComponent(i).getBounds();
+						preferredSize.width = Math.max(bounds.x + bounds.width, preferredSize.width);
+						preferredSize.height = Math.max(bounds.y + bounds.height, preferredSize.height);
+					}
+					Insets insets = logPanel.getInsets();
+					preferredSize.width += insets.right;
+					preferredSize.height += insets.bottom;
+					logPanel.setMinimumSize(preferredSize);
+					logPanel.setPreferredSize(preferredSize);
+				}
+			}
+			TP.addTab("Log", logPanel);
+
+		}
 		contentPane.add(TP);
 		TP.setBounds(15, 475, 795, 130);
 
@@ -145,7 +186,7 @@ public class MainUI extends JFrame implements ActionListener {
 			catch (IOException e) {System.out.println(" procccess not read"+e);}
 			System.out.println(dir) ;
 			try {
-				FileReader reader = new FileReader(dir+"sync_"+file) ; 
+				FileReader reader = new FileReader(dir+"sync_"+file) ;
 				BufferedReader br = new BufferedReader(reader) ;
 				codeArea.read(br, null) ;
 				br.close() ;
@@ -153,6 +194,17 @@ public class MainUI extends JFrame implements ActionListener {
 			catch(Exception e) {
 				System.out.println(e) ;
 			}
+
+			try {
+				FileReader reader = new FileReader("log.txt") ;
+				BufferedReader br = new BufferedReader(reader) ;
+				logArea.read(br, null) ;
+				br.close() ;
+			}
+			catch(Exception e) {
+				System.out.println(e) ;
+			}
+
 			}
 		}
 

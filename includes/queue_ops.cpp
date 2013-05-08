@@ -58,7 +58,7 @@ void queue_ops::push_into_queue(string entry, int direct_flag){
             rep_ret_s = string(rep_ret);
             header_ret_s = string(header_ret);
             input_queue.push(rep_ret_s);
-            fprintf(log_file, "Replacing %s by %s\n", entry.c_str(), rep_ret_s.c_str());
+            fprintf(log_file, "Replaced %s by %s\n", entry.c_str(), rep_ret_s.c_str());
             
             //Look if the header file already exists in the array.
             for (i = 0; i < count; ++i){
@@ -107,7 +107,7 @@ int queue_ops::generate_output_file(string path, string file) {
         include_name+= header_array[i];
         include_name+= ".h>\n";
         fputs(include_name.c_str(), output_file);
-        fprintf(log_file, "Including %s", include_name.c_str());
+        fprintf(log_file, "Included %s", include_name.c_str());
     }
     while(!input_queue.empty()) {
         check_str= pop_from_queue();
