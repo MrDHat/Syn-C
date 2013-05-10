@@ -1,93 +1,87 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <g>
 	<functions>
-	<!-- <generic.h replacement=""> -->
-
-	<!-- </generic.h> -->
-	<!-- <graphics.h replacement="" header=""/> -->
-	    <function name="arc" replacement="" header=""/>
-	    <function name="bar" replacement="" header=""/>
-	    <function name="bar3d" replacement="" header=""/>
-	    <function name="circle" replacement="" header=""/>
-	    <function name="cleardevice" replacement="" header=""/>
-	    <function name="clearviewport" replacement="" header=""/>
-	    <function name="closegraph" replacement="" header=""/>
-	    <function name="detectgraph" replacement="" header=""/>
-	    <function name="drawpoly" replacement="" header=""/>
-	    <function name="ellipse" replacement="" header=""/>
-	    <function name="fillellipse" replacement="" header=""/>
-	    <function name="fillpoly" replacement="" header=""/>
-	    <function name="floodfill" replacement="" header=""/>
-	    <function name="getarccoords" replacement="" header=""/>
-	    <function name="getaspectratio" replacement="" header=""/>
-	    <function name="getbkcolor" replacement="" header=""/>
-	    <function name="getcolor" replacement="" header=""/>
-	    <function name="getdefaultpalette" replacement="" header=""/>
-	    <function name="getdrivername" replacement="" header=""/>
-	    <function name="getfillpattern" replacement="" header=""/>
-	    <function name="getfillsettings" replacement="" header=""/>
-	    <function name="getgraphmode" replacement="" header=""/>
-	    <function name="getimage" replacement="" header=""/>
-	    <function name="getlinesettings" replacement="" header=""/>
-	    <function name="getmaxcolor" replacement="" header=""/>
-	    <function name="getmaxmode" replacement="" header=""/>
-	    <function name="getmaxx" replacement="" header=""/>
-	    <function name="getmaxy" replacement="" header=""/>
-	    <function name="getmodename" replacement="" header=""/>
-	    <function name="getmoderange" replacement="" header=""/>
-	    <function name="getpalette" replacement="" header=""/>
-	    <function name="getpalettesize" replacement="" header=""/>
-	    <function name="getpixel" replacement="" header=""/>
-	    <function name="gettextsettings" replacement="" header=""/>
-	    <function name="getviewsettings" replacement="" header=""/>
-	    <function name="getx" replacement="" header=""/>
-	    <function name="gety" replacement="" header=""/>
-	    <function name="graphdefaults" replacement="" header=""/>
-	    <function name="grapherrormsg" replacement="" header=""/>
-	    <function name="_graphfreemem" replacement="" header=""/>
-	    <function name="_graphgetmem" replacement="" header=""/>
-	    <function name="graphresult" replacement="" header=""/>
-	    <function name="imagesize" replacement="" header=""/>
-	    <function name="initgraph" replacement="" header=""/>
-	    <function name="installuserdriver" replacement="" header=""/>
-	    <function name="installuserfont" replacement="" header=""/>
-	    <function name="line" replacement="" header=""/>
-	    <function name="linerel" replacement="" header=""/>
-	    <function name="lineto" replacement="" header=""/>
-	    <function name="moverel" replacement="" header=""/>
-	    <function name="moveto" replacement="" header=""/>
-	    <function name="outtext" replacement="" header=""/>
-	    <function name="outtextxy" replacement="" header=""/>
-	    <function name="pieslice" replacement="" header=""/>
-	    <function name="putimage" replacement="" header=""/>
-	    <function name="putpixel" replacement="" header=""/>
-	    <function name="rectangle" replacement="" header=""/>
-	    <function name="registerbgidriver" replacement="" header=""/>
-	    <function name="registerfarbgidriver" replacement="" header=""/>
-	    <function name="registerbgifont" replacement="" header=""/>
-	    <function name="registerfarbgifont" replacement="" header=""/>
-	    <function name="restorecrtmode" replacement="" header=""/>
-	    <function name="sector" replacement="" header=""/>
-	    <function name="setactivepage" replacement="" header=""/>
-	    <function name="setallpalette" replacement="" header=""/>
-	    <function name="setaspectratio" replacement="" header=""/>
-	    <function name="setbkcolor" replacement="" header=""/>
-	    <function name="setcolor" replacement="" header=""/>
-	    <function name="setfillpattern" replacement="" header=""/>
-	    <function name="setfillstyle" replacement="" header=""/>
-	    <function name="setgraphbufsize" replacement="" header=""/>
-	    <function name="setgraphmode" replacement="" header=""/>
-	    <function name="setlinestyle" replacement="" header=""/>
-	    <function name="setpalette" replacement="" header=""/>
-	    <function name="setrgbpalette" replacement="" header=""/>
-	    <function name="settextjustify" replacement="" header=""/>
-	    <function name="settextstyle" replacement="" header=""/>
-	    <function name="setusercharsize" replacement="" header=""/>
-	    <function name="setviewport" replacement="" header=""/>
-	    <function name="setvisualpage" replacement="" header=""/>
-	    <function name="setwritemode" replacement="" header=""/>
-	    <function name="textheight" replacement="" header=""/>
-	    <function name="textwidth" replacement="" header=""/>
-	<!-- </graphics.h> -->
-	</functions>
+	    <function name="arc" replacement=" " header=" "/>
+	    <function name="bar" replacement=" " header=" "/>
+	    <function name="bar3d" replacement=" " header=" "/>
+	    <function name="circle" replacement=" " header=" "/>
+	    <function name="cleardevice" replacement=" " header=" "/>
+	    <function name="clearviewport" replacement=" " header=" "/>
+	    <function name="closegraph" replacement=" " header=" "/>
+	    <function name="detectgraph" replacement=" " header=" "/>
+	    <function name="drawpoly" replacement=" " header=" "/>
+	    <function name="ellipse" replacement=" " header=" "/>
+	    <function name="fillellipse" replacement=" " header=" "/>
+	    <function name="fillpoly" replacement=" " header=" "/>
+	    <function name="floodfill" replacement=" " header=" "/>
+	    <function name="getarccoords" replacement=" " header=" "/>
+	    <function name="getaspectratio" replacement=" " header=" "/>
+	    <function name="getbkcolor" replacement=" " header=" "/>
+	    <function name="getcolor" replacement=" " header=" "/>
+	    <function name="getdefaultpalette" replacement=" " header=" "/>
+	    <function name="getdrivername" replacement=" " header=" "/>
+	    <function name="getfillpattern" replacement=" " header=" "/>
+	    <function name="getfillsettings" replacement=" " header=" "/>
+	    <function name="getgraphmode" replacement=" " header=" "/>
+	    <function name="getimage" replacement=" " header=" "/>
+	    <function name="getlinesettings" replacement=" " header=" "/>
+	    <function name="getmaxcolor" replacement=" " header=" "/>
+	    <function name="getmaxmode" replacement=" " header=" "/>
+	    <function name="getmaxx" replacement=" " header=" "/>
+	    <function name="getmaxy" replacement=" " header=" "/>
+	    <function name="getmodename" replacement=" " header=" "/>
+	    <function name="getmoderange" replacement=" " header=" "/>
+	    <function name="getpalette" replacement=" " header=" "/>
+	    <function name="getpalettesize" replacement=" " header=" "/>
+	    <function name="getpixel" replacement=" " header=" "/>
+	    <function name="gettextsettings" replacement=" " header=" "/>
+	    <function name="getviewsettings" replacement=" " header=" "/>
+	    <function name="getx" replacement=" " header=" "/>
+	    <function name="gety" replacement=" " header=" "/>
+	    <function name="graphdefaults" replacement=" " header=" "/>
+	    <function name="grapherrormsg" replacement=" " header=" "/>
+	    <function name="_graphfreemem" replacement=" " header=" "/>
+	    <function name="_graphgetmem" replacement=" " header=" "/>
+	    <function name="graphresult" replacement=" " header=" "/>
+	    <function name="imagesize" replacement=" " header=" "/>
+	    <function name="initgraph" replacement=" " header=" "/>
+	    <function name="installuserdriver" replacement=" " header=" "/>
+	    <function name="installuserfont" replacement=" " header=" "/>
+	    <function name="line" replacement=" " header=" "/>
+	    <function name="linerel" replacement=" " header=" "/>
+	    <function name="lineto" replacement=" " header=" "/>
+	    <function name="moverel" replacement=" " header=" "/>
+	    <function name="moveto" replacement=" " header=" "/>
+	    <function name="outtext" replacement=" " header=" "/>
+	    <function name="outtextxy" replacement=" " header=" "/>
+	    <function name="pieslice" replacement=" " header=" "/>
+	    <function name="putimage" replacement=" " header=" "/>
+	    <function name="putpixel" replacement=" " header=" "/>
+	    <function name="rectangle" replacement=" " header=" "/>
+	    <function name="registerbgidriver" replacement=" " header=" "/>
+	    <function name="registerfarbgidriver" replacement=" " header=" "/>
+	    <function name="registerbgifont" replacement=" " header=" "/>
+	    <function name="registerfarbgifont" replacement=" " header=" "/>
+	    <function name="restorecrtmode" replacement=" " header=" "/>
+	    <function name="sector" replacement=" " header=" "/>
+	    <function name="setactivepage" replacement=" " header=" "/>
+	    <function name="setallpalette" replacement=" " header=" "/>
+	    <function name="setaspectratio" replacement=" " header=" "/>
+	    <function name="setbkcolor" replacement=" " header=" "/>
+	    <function name="setcolor" replacement=" " header=" "/>
+	    <function name="setfillpattern" replacement=" " header=" "/>
+	    <function name="setfillstyle" replacement=" " header=" "/>
+	    <function name="setgraphbufsize" replacement=" " header=" "/>
+	    <function name="setgraphmode" replacement=" " header=" "/>
+	    <function name="setlinestyle" replacement=" " header=" "/>
+	    <function name="setpalette" replacement=" " header=" "/>
+	    <function name="setrgbpalette" replacement=" " header=" "/>
+	    <function name="settextjustify" replacement=" " header=" "/>
+	    <function name="settextstyle" replacement=" " header=" "/>
+	    <function name="setusercharsize" replacement=" " header=" "/>
+	    <function name="setviewport" replacement=" " header=" "/>
+	    <function name="setvisualpage" replacement=" " header=" "/>
+	    <function name="setwritemode" replacement=" " header=" "/>
+	    <function name="textheight" replacement=" " header=" "/>
+	    <function name="textwidth" replacement=" " header=" "/>
+	    	</functions>
 </g>

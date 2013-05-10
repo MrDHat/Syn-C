@@ -1,26 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <m>
 	<functions>
-	<!-- <mem.h replacement="">	-->
-	    <function name="_fmemccpy" replacement="" header=""/>
-	    <function name="_fmemchr" replacement="" header=""/>
-	    <function name="_fmemcmp" replacement="" header=""/>
-	    <function name="_fmemcpy" replacement="" header=""/>
-	    <function name="_fmemicmp" replacement="" header=""/>
-	    <function name="_fmemmove" replacement="" header=""/>
-	    <function name="_fmemset" replacement="" header=""/>
-	    <function name="_fmovmem" replacement="" header=""/>
-	    <function name="_fsetmem" replacement="" header=""/>
-	    <function name="memccpy" replacement="" header=""/>
-	    <function name="memchr" replacement="" header=""/>
-	    <function name="memcmp" replacement="" header=""/>
-	    <function name="memcpy" replacement="" header=""/>
-	    <function name="memicmp" replacement="" header=""/>
-	    <function name="memmove" replacement="" header=""/>
-	    <function name="memset" replacement="" header=""/>
-	    <function name="movedata" replacement="" header=""/>
-	    <function name="movmem" replacement="" header=""/>
-	    <function name="setmem" replacement="" header=""/>
-	<!-- </mem.h> -->
+	    <function name="_fmemccpy" replacement=" " header=" "/>
+	    <function name="_fmemchr" replacement=" " header=" "/>
+	    <function name="_fmemcmp" replacement=" " header=" "/>
+	    <function name="_fmemcpy" replacement=" " header=" "/>
+	    <function name="_fmemicmp" replacement=" " header=" "/>
+	    <function name="_fmemmove" replacement=" " header=" "/>
+	    <function name="_fmemset" replacement=" " header=" "/>
+	    <function name="_fmovmem" replacement=" " header=" "/>
+	    <function name="_fsetmem" replacement=" " header=" "/>
+	    <function name="memccpy" replacement="memccpy" header="string"/>
+	    <function name="memchr" replacement="memchr" header="string"/>
+	    <function name="memcmp" replacement="memcmp" header="string"/>
+	    <function name="memcpy" replacement="memcpy" header="string"/>
+	    <function name="memicmp" replacement=" " header=" "/>
+	    <function name="memmove" replacement="memmove" header="string"/>
+	    <function name="memset" replacement="memset" header="string"/>
+	    <function name="movedata" replacement=" " header=" "/>
+	    <function name="memmove" replacement=" " header=" "/>
+	    <function name="setmem" replacement=" " header=" "/>
 	</functions>
 </m>

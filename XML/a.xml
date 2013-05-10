@@ -1,30 +1,30 @@
 <a>
 	<functions>
-		<function name="arc" replacement="" header=""/>
-		<function name="brk" replacement="" header=""/>
-		<function name="calloc" replacement="" header=""/>
-		<function name="coreleft" replacement="" header=""/>
-		<function name="farcalloc" replacement="" header=""/>
-		<function name="farcoreleft" replacement="" header=""/>
-		<function name="farfree" replacement="" header=""/>
-		<function name="farheapcheck" replacement="" header=""/>
-		<function name="farheapcheckfree" replacement="" header=""/>
-		<function name="farheapchecknode" replacement="" header=""/>
-		<function name="farheapfillfree" replacement="" header=""/>
-		<function name="farheapwalk" replacement="" header=""/>
-		<function name="farmalloc" replacement="" header=""/>
-		<function name="farrealloc" replacement="" header=""/>
-		<function name="free" replacement="" header=""/>
-		<function name="heapcheck" replacement="" header=""/>
-		<function name="heapcheckfree" replacement="" header=""/>
-		<function name="heapchecknode" replacement="" header=""/>
-		<function name="heapfillfree" replacement="" header=""/>
-		<function name="heapwalk" replacement="" header=""/>
-		<function name="malloc" replacement="" header=""/>
-		<function name="realloc" replacement="" header=""/>
-		<function name="sbrk" replacement="" header=""/>
-		<function name="NULL" replacement="" header=""/>
-		<function name="ptrdiff_t" replacement="" header=""/>
-		<function name="size_t" replacement="" header=""/>
+		<function name="arc" replacement=" " header=" "/>
+		<function name="brk" replacement=" " header=" "/>
+		<function name="calloc" replacement="calloc" header="stdlib"/>
+		<function name="coreleft" replacement=" " header=" "/>
+		<function name="farcalloc" replacement="calloc" header="stdlib"/>
+		<function name="farcoreleft" replacement=" " header=" "/>
+		<function name="farfree" replacement=" " header=" "/>
+		<function name="farheapcheck" replacement=" " header=" "/>
+		<function name="farheapcheckfree" replacement=" " header=" "/>
+		<function name="farheapchecknode" replacement=" " header=" "/>
+		<function name="farheapfillfree" replacement=" " header=" "/>
+		<function name="farheapwalk" replacement=" " header=" "/>
+		<function name="farmalloc" replacement="malloc" header="stdlib"/>
+		<function name="farrealloc" replacement="realloc" header="stdlib"/>
+		<function name="free" replacement="free" header="stdlib"/>
+		<function name="heapcheck" replacement=" " header=" "/>
+		<function name="heapcheckfree" replacement=" " header=" "/>
+		<function name="heapchecknode" replacement=" " header=" "/>
+		<function name="heapfillfree" replacement=" " header=" "/>
+		<function name="heapwalk" replacement=" " header=" "/>
+		<function name="malloc" replacement="malloc" header="stdlib"/>
+		<function name="realloc" replacement="realloc" header="stdlib"/>
+		<function name="sbrk" replacement=" " header=" "/>
+		<function name="NULL" replacement=" " header=" "/>
+		<function name="ptrdiff_t" replacement=" " header=" "/>
+		<function name="size_t" replacement=" " header=" "/>
 	</functions>
 </a>

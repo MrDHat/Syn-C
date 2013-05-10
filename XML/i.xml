@@ -1,43 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <i>
 	<functions>
-	<!-- <io.h replacement=""> -->
-	    <function name="access" replacement="" header=""/>
-	    <function name="chmod" replacement="" header=""/>
-	    <function name="_chmod" replacement="" header=""/>
-	    <function name="chsize" replacement="" header=""/>
-	    <function name="close" replacement="" header=""/>
-	    <function name="_close" replacement="" header=""/>
-	    <function name="creat" replacement="" header=""/>
-	   	<function name="_creat" replacement="" header=""/>
-	    <function name="creatnew" replacement="" header=""/>
-	    <function name="creattemp" replacement="" header=""/>
-	    <function name="dup" replacement="" header=""/>
-	    <function name="dup2" replacement="" header=""/>
-	    <function name="eof" replacement="" header=""/>
-	    <function name="filelength" replacement="" header=""/>
-	    <function name="getftime" replacement="" header=""/>
-	    <function name="ioctl" replacement="" header=""/>
-	    <function name="isatty" replacement="" header=""/>
-	    <function name="lock" replacement="" header=""/>
-	    <function name="locking" replacement="" header=""/>
-	    <function name="lseek" replacement="" header=""/>
-	    <function name="mktemp" replacement="" header=""/>
-	    <function name="open" replacement="" header=""/>
-	    <function name="_open" replacement="" header=""/>
-	   	<function name="read" replacement="" header=""/>
-	    <function name="_read" replacement="" header=""/>
-	    <function name="remove" replacement="" header=""/>
-	    <function name="rename" replacement="" header=""/>
-	    <function name="setftime" replacement="" header=""/>
-	    <function name="setmode" replacement="" header=""/>
-	    <function name="sopen" replacement="" header=""/>
-	    <function name="tell" replacement="" header=""/>
-	   	<function name="umask" replacement="" header=""/>
-	    <function name="unlink" replacement="" header=""/>
-	    <function name="unlock" replacement="" header=""/>
-	    <function name="write" replacement="" header=""/>
-	    <function name="_write" replacement="" header=""/>
-	<!-- </io.h> -->
+	    <function name="access" replacement=" " header=" "/>
+	    <function name="chmod" replacement=" " header=" "/>
+	    <function name="_chmod" replacement=" " header=" "/>
+	    <function name="chsize" replacement=" " header=" "/>
+	    <function name="close" replacement=" " header=" "/>
+	    <function name="_close" replacement=" " header=" "/>
+	    <function name="creat" replacement=" " header=" "/>
+	   	<function name="_creat" replacement=" " header=" "/>
+	    <function name="creatnew" replacement=" " header=" "/>
+	    <function name="creattemp" replacement=" " header=" "/>
+	    <function name="dup" replacement=" " header=" "/>
+	    <function name="dup2" replacement=" " header=" "/>
+	    <function name="eof" replacement=" " header=" "/>
+	    <function name="filelength" replacement=" " header=" "/>
+	    <function name="getftime" replacement=" " header=" "/>
+	    <function name="ioctl" replacement=" " header=" "/>
+	    <function name="isatty" replacement=" " header=" "/>
+	    <function name="lock" replacement=" " header=" "/>
+	    <function name="locking" replacement=" " header=" "/>
+	    <function name="lseek" replacement=" " header=" "/>
+	    <function name="mktemp" replacement=" " header=" "/>
+	    <function name="open" replacement=" " header=" "/>
+	    <function name="_open" replacement=" " header=" "/>
+	   	<function name="read" replacement=" " header=" "/>
+	    <function name="_read" replacement=" " header=" "/>
+	    <function name="remove" replacement="remove" header="stdio"/>
+	    <function name="rename" replacement="rename" header="stdio"/>
+	    <function name="setftime" replacement=" " header=" "/>
+	    <function name="setmode" replacement=" " header=" "/>
+	    <function name="sopen" replacement=" " header=" "/>
+	    <function name="tell" replacement=" " header=" "/>
+	   	<function name="umask" replacement=" " header=" "/>
+	    <function name="unlink" replacement=" " header=" "/>
+	    <function name="unlock" replacement=" " header=" "/>
+	    <function name="write" replacement=" " header=" "/>
+	    <function name="_write" replacement=" " header=" "/>
 	</functions>
 </i>
