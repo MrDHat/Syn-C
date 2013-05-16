@@ -20,4 +20,6 @@ Authors (In alphabetical order):
 + Sidharth Kathuria | [siddharth124](http://github.com/siddharth124)
 
 
+The project is incomplete and is missing a lot of function definitions in the XML files. Not suitable for production as of now.
+
 Licensed under GNU GPLv3
